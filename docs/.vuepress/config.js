@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Younglina冲冲冲", //页面加载中显示的标题
-  description: "Younglina要加油", //页面加载中显示的描述
+  title: "Younglina", //页面加载中显示的标题
+  description: "Younglina要加油！冲冲冲！", //页面加载中显示的描述
   // dest: "docs/public",
   base: "/younglinaBlog/", //根路径 https://younglina.github.io/younglinaBlog/
   author: "Younglina", //全局显示作者
@@ -19,7 +19,7 @@ module.exports = {
     author: 'Younglina',
     showAccessNumber: true,
     subSidebar: "auto",
-    logo: "/cat.jpeg", //导航栏左侧头像
+    logo: "/avatar.jpeg", //导航栏左侧头像
     authorAvatar: '/avatar.png',
     // 项目开始时间，只填写年份
     startYear: '2021',
@@ -29,7 +29,7 @@ module.exports = {
         text: "文档",
         items: [
           { text: "Vue3配置", link: "/write/docs/Vue3Config" },
-          { text: "搭建vuepress", link: "/write/docs/vuepressConfig" },
+          { text: "搭建vuepress", link: "/write/docs/VuepressConfig" },
         ],
       },
       {
@@ -82,7 +82,7 @@ module.exports = {
             {
               text: "搭建vuepress",
               title: "搭建vuepress",
-              path: "vuepressConfig",
+              path: "VuepressConfig",
             },
           ],
         },

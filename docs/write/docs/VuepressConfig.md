@@ -15,7 +15,7 @@ tags:
 mkdir vuepress-starter
 cd vuepress-starter
 ```
-### 2.使用你喜欢的包管理器进行初始化
+### 2.初始化
 
 ```javascript
 yarn init
@@ -25,7 +25,7 @@ yarn init
 ```javascript
 yarn add -D vuepress
 ```
-### 4.创建你的第一篇文档
+### 4.创建一篇文档
 
 ```javascript
 mkdir docs
@@ -107,3 +107,50 @@ sh deploy.sh
 
 ## 同步提交gitee
 ### 1.在gitee中导入github仓库
+<img src="https://github.com/Younglina/younglinaBlog/blob/master/assets/giteeImport.png?raw=true)" />
+
+### 2.在git中新增三个secrets
+<img src="https://github.com/Younglina/younglinaBlog/blob/master/assets/secrit.png?raw=true)" />
+
+(1) GITEE_PASSWORD => gitee的登录密码  
+
+(2) GITEE_PRIVATE_KEY => 本地的 .ssh/id_rsa  
+
+(3) GITEE_TOKEN => gitee的<a href="https://gitee.com/profile/personal_access_tokens" target="_blank">私人令牌</a>
+
+### 3.同步脚本
+根目录新增.github/workflows/syncToGitee.yml
+```yml
+name: syncToGitee
+on:
+  push:
+    branches:
+      - gh-pages
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror the Github organization repos to Gitee.
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/Younglina
+        dst: gitee/Younglina
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        account_type: user
+        static_list: "younglinaBlog"
+        force_update: true
+        debug: true
+
+    - name: Build Gitee Pages
+      uses: yanglbme/gitee-pages-action@main
+      with:
+        # 注意替换为你的 Gitee 用户名
+        gitee-username: Younglina
+        # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+        gitee-password: ${{ secrets.GITEE_PASSWORD }}
+        # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+        gitee-repo: Younglina/younglinaBlog
+        # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+        branch: gh-pages
+```
