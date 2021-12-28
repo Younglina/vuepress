@@ -19,7 +19,7 @@ module.exports = {
     author: 'Younglina',
     showAccessNumber: true,
     subSidebar: "auto",
-    logo: "/avatar.jpeg", //导航栏左侧头像
+    logo: "/avatar.png", //导航栏左侧头像
     authorAvatar: '/avatar.png',
     // 项目开始时间，只填写年份
     startYear: '2021',
