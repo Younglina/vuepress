@@ -2,7 +2,7 @@
 title: Vue3 一些插件配置
 author: Younglina
 date: '2021-12-10'
-permalink: /younglinaBlog//write/docs/Vue3Config.html
+showAccessNumber: true
 categories:
  - 文档
 tags:

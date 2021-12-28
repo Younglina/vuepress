@@ -1,24 +1,25 @@
 module.exports = {
-  title: "Younglina",
-  description: "Younglina",
+  title: "Younglina冲冲冲", //页面加载中显示的标题
+  description: "Younglina要加油", //页面加载中显示的描述
   // dest: "docs/public",
-  base: "/younglinaBlog/",
-  author: "Younglina",
+  base: "/younglinaBlog/", //根路径 https://younglina.github.io/younglinaBlog/
+  author: "Younglina", //全局显示作者
   locales: {
     "/": {
       lang: "zh-CN",
     },
   },
   markdown: {
-    lineNumbers: true,
+    lineNumbers: true, //代码行数
   },
   theme: "reco",
   themeConfig: {
     type: "blog",
-    sidebarDepth: 2,
+    sidebarDepth: 2, //子标题
     author: 'Younglina',
+    showAccessNumber: true,
     subSidebar: "auto",
-    logo: "/cat.jpeg",
+    logo: "/cat.jpeg", //导航栏左侧头像
     authorAvatar: '/avatar.png',
     // 项目开始时间，只填写年份
     startYear: '2021',
@@ -26,7 +27,10 @@ module.exports = {
       { text: "首页", link: "/" },
       {
         text: "文档",
-        items: [{ text: "Vue3配置", link: "/write/docs/Vue3Config" }],
+        items: [
+          { text: "Vue3配置", link: "/write/docs/Vue3Config" },
+          { text: "搭建vuepress", link: "/write/docs/vuepressConfig" },
+        ],
       },
       {
         text: "源码阅读",
@@ -74,6 +78,11 @@ module.exports = {
               text: "Vue3配置",
               title: "Vue3配置",
               path: "Vue3Config",
+            },
+            {
+              text: "搭建vuepress",
+              title: "搭建vuepress",
+              path: "vuepressConfig",
             },
           ],
         },
@@ -140,6 +149,7 @@ module.exports = {
       ]
     }
   },
+  //百度统计
   head:[
     [
       "script",
@@ -157,7 +167,7 @@ module.exports = {
   ],
   plugins: [
     [
-      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang", //live2d
       {
         theme: ["blackCat", "whiteCat"],
         clean: true,
