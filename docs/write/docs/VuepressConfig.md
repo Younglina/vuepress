@@ -107,10 +107,10 @@ sh deploy.sh
 
 ## 同步提交gitee
 ### 1.在gitee中导入github仓库
-<img src="https://github.com/Younglina/younglinaBlog/blob/master/assets/giteeImport.png?raw=true)" />
+<img src="https://github.com/Younglina/younglinaBlog/row/master/assets/giteeImport.png?raw=true" />
 
 ### 2.在git中新增三个secrets
-<img src="https://github.com/Younglina/younglinaBlog/blob/master/assets/secrit.png?raw=true)" />
+<img src="https://github.com/Younglina/younglinaBlog/row/master/assets/secrit.png" />
 
 (1) GITEE_PASSWORD => gitee的登录密码  
 
