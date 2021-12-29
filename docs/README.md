@@ -8,7 +8,7 @@ home: true
 #   borderRadius: '50%',
 #   boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
 # }
-bgImage: /bg.jpeg
+bgImage: /bg.jpg
 bgImageStyle: {
   height: '30vh',
   width: '100vw',

@@ -19,8 +19,8 @@ module.exports = {
     author: 'Younglina',
     showAccessNumber: true,
     subSidebar: "auto",
-    logo: "/avatar.png", //导航栏左侧头像
-    authorAvatar: '/avatar.png',
+    logo: "/avatar.jpg", //导航栏左侧头像
+    authorAvatar: '/avatar.jpg',
     // 项目开始时间，只填写年份
     startYear: '2021',
     nav: [
@@ -143,18 +143,22 @@ module.exports = {
         text: '标签'      // 默认文案 “标签”
       },
       socialLinks: [     // 信息栏展示社交信息
-        { text: "github", icon:'reco-github',link: "https://github.com/Younglina" },
-        { text: "gitee", icon:'reco-mayun',link: "https://gitee.com/Younglina" },
-        { text: "juejin", icon:'reco-juejin',link: "https://juejin.cn/user/817692381290190" },
+        { text: "github", icon: 'reco-github', link: "https://github.com/Younglina" },
+        { text: "gitee", icon: 'reco-mayun', link: "https://gitee.com/Younglina" },
+        { text: "juejin", icon: 'reco-juejin', link: "https://juejin.cn/user/817692381290190" },
       ]
     }
   },
   //百度统计
-  head:[
+  head: [
+    [
+      'link',
+      { rel: 'icon', herf: '/avatar.jpg' }
+    ],
     [
       "script",
-          {},
-          `
+      {},
+      `
       var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
@@ -163,7 +167,7 @@ module.exports = {
         s.parentNode.insertBefore(hm, s);
       })();
       `
-      ]
+    ]
   ],
   plugins: [
     [
