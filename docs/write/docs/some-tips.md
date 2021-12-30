@@ -1,5 +1,5 @@
 ---
-data: 2018-02-06
+date: '2018-02-16'
 title: 一些知识
 author: Younglina
 categories:

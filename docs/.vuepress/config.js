@@ -30,6 +30,7 @@ module.exports = {
         items: [
           { text: "Vue3配置", link: "/write/docs/Vue3Config" },
           { text: "搭建vuepress", link: "/write/docs/VuepressConfig" },
+          { text: "代码规范格式化配置", link: "/write/docs/codeFormat" },
         ],
       },
       {
@@ -83,6 +84,11 @@ module.exports = {
               text: "搭建vuepress",
               title: "搭建vuepress",
               path: "VuepressConfig",
+            },
+            {
+              text: "代码规范格式化配置",
+              title: "代码规范格式化配置",
+              path: "codeFormat",
             },
           ],
         },
@@ -153,7 +159,7 @@ module.exports = {
   head: [
     [
       'link',
-      { rel: 'icon', herf: '/avatar.jpg' }
+      { rel: 'icon', herf: '/favicon.ico' }
     ],
     [
       "script",

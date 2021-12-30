@@ -1,5 +1,5 @@
 ---
-data: 2018-11-20
+date: '2018-11-20'
 title: 体验trao开发微信小程序
 author: Younglina
 categories:

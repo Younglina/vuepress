@@ -1,5 +1,5 @@
 ---
-data: 2018-08-31
+date: '2018-08-31'
 title: 体验mpvue仿网易云音乐手机版
 author: Younglina
 categories:

@@ -10,7 +10,6 @@ tags:
 ---
 
 ## EsLint
-### 安装eslint
 1. vscode下载eslint和Vetur插件
 2. 项目安装eslint插件
 ```
