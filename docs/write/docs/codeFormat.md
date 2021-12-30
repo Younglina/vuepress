@@ -1,12 +1,12 @@
 ---
-title: 代码格式化配置
+title: 代码规范格式化配置
 author: Younglina
 date: '2021-12-30'
 categories:
  - 文档
 tags:
  - 记录
- - eslint
+ - 代码规范
 ---
 
 ## EsLint
