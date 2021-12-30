@@ -1,7 +1,7 @@
 ---
 title: vuepress配置自动部署
 author: Younglina
-date: '2021-12-10'
+date: '2021-12-28'
 categories:
  - 文档
 tags:
