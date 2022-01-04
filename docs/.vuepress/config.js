@@ -60,6 +60,23 @@ module.exports = {
           },
         ],
       },
+      {
+        text: "算法学习",
+        items: [
+          {
+            text: "03.无重复字符的最长子串",
+            link: "/write/algorithms/leetCode03",
+          },
+          {
+            text: "11.盛水最多的容器",
+            link: "/write/algorithms/leetCode11",
+          },
+          {
+            text: "15.三数之和",
+            link: "/write/algorithms/leetCode15",
+          },
+        ],
+      },
       // {
       //   text: "Younglina",
       //   items: [
@@ -138,6 +155,28 @@ module.exports = {
           ],
         },
       ],
+      'write/algorithms':[{
+        title: "算法学习",
+        path: "/",
+        collapsable: false,
+        items: [
+          {
+            text: "03.无重复字符的最长子串",
+            title: "03.无重复字符的最长子串",
+            link: "/write/algorithms/leetCode03",
+          },
+          {
+            text: "11.盛水最多的容器",
+            title: "11.盛水最多的容器",
+            link: "/write/algorithms/leetCode11",
+          },
+          {
+            text: "15.三数之和",
+            title: "15.三数之和",
+            link: "/write/algorithms/leetCode15",
+          },
+        ],}
+    ]
     },
     blogConfig: {
       category: {
