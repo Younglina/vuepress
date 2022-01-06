@@ -75,6 +75,22 @@ module.exports = {
             text: "15.三数之和",
             link: "/write/algorithms/leetCode15",
           },
+          {
+            text: "19.删除链表的倒数第 N 个结点",
+            link: "/write/algorithms/leetCode19",
+          },
+          {
+            text: "26.删除有序数组中的重复项",
+            link: "/write/algorithms/leetCode26",
+          },
+          {
+            text: "27.移除元素",
+            link: "/write/algorithms/leetCode27",
+          },
+          {
+            text: "88.合并两个有序数组",
+            link: "/write/algorithms/leetCode88",
+          },
         ],
       },
       // {
@@ -155,7 +171,7 @@ module.exports = {
           ],
         },
       ],
-      'write/algorithms':[{
+      'write/algorithms/':[{
         title: "算法学习",
         path: "/",
         collapsable: false,
@@ -163,17 +179,37 @@ module.exports = {
           {
             text: "03.无重复字符的最长子串",
             title: "03.无重复字符的最长子串",
-            link: "/write/algorithms/leetCode03",
+            path: "leetCode03",
           },
           {
             text: "11.盛水最多的容器",
             title: "11.盛水最多的容器",
-            link: "/write/algorithms/leetCode11",
+            path: "leetCode11",
           },
           {
             text: "15.三数之和",
             title: "15.三数之和",
-            link: "/write/algorithms/leetCode15",
+            path: "leetCode15",
+          },
+          {
+            text: "19.删除链表的倒数第 N 个结点",
+            title: "19.删除链表的倒数第 N 个结点",
+            path: "leetCode19",
+          },
+          {
+            text: "26.删除有序数组中的重复项",
+            title: "26.删除有序数组中的重复项",
+            path: "leetCode26",
+          },
+          {
+            text: "27.移除元素",
+            title: "27.移除元素",
+            path: "leetCode27",
+          },
+          {
+            text: "88.合并两个有序数组",
+            title: "88.合并两个有序数组",
+            path: "leetCode88",
           },
         ],}
     ]
