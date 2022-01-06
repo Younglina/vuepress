@@ -171,7 +171,7 @@ module.exports = {
           ],
         },
       ],
-      'write/algorithms/':[{
+      'write/algorithms/': [{
         title: "算法学习",
         path: "/",
         collapsable: false,
@@ -211,8 +211,9 @@ module.exports = {
             title: "88.合并两个有序数组",
             path: "leetCode88",
           },
-        ],}
-    ]
+        ],
+      }
+      ]
     },
     blogConfig: {
       category: {
@@ -234,7 +235,7 @@ module.exports = {
   head: [
     [
       'link',
-      { rel: 'icon', herf: '/favicon.ico' }
+      { rel: 'icon', herf: '"/younglinaBlog/favicon.ico' }
     ],
     [
       "script",
@@ -248,7 +249,15 @@ module.exports = {
         s.parentNode.insertBefore(hm, s);
       })();
       `
+    ],
+    [
+      "style",
+      {},
+      `.content__default{max-width: unset !important;}
+      .markdown-body,.vssue,.vssue .vssue-new-comment .vssue-new-comment-input{font-size: 14px !important;}
+      .vssue-header-powered-by{display: none}`
     ]
+
   ],
   plugins: [
     [
@@ -258,5 +267,16 @@ module.exports = {
         clean: true,
       },
     ],
+    [
+      "@vssue/vuepress-plugin-vssue",
+      {
+        platform: 'gitee',
+        owner: 'Younglina',
+        repo: 'younglinaBlog',
+        clientId: '4e3bcb1906a476b9e1abe40c953309688c7ca38153f8e3d089b29de001b6df36',
+        clientSecret: '818fcfd021439c0210fa4bc9dd547ce0944ca87180634d675a77a525814ea77a',
+        autoCreateIssue: true,
+      }
+    ]
   ],
 };

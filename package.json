@@ -12,7 +12,11 @@
     "vuepress": "^1.9.1"
   },
   "dependencies": {
+    "@vssue/api-gitee-v5": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "i": "^0.3.7",
+    "npm": "^8.3.0",
     "vuepress-theme-reco": "^1.6.10"
   }
 }
