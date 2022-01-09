@@ -91,6 +91,10 @@ module.exports = {
             text: "88.合并两个有序数组",
             link: "/write/algorithms/leetCode88",
           },
+          {
+            text: "345.反转字符串中的元音字母",
+            link: "/write/algorithms/leetCode345",
+          },
         ],
       },
       // {
@@ -210,6 +214,11 @@ module.exports = {
             text: "88.合并两个有序数组",
             title: "88.合并两个有序数组",
             path: "leetCode88",
+          },
+          {
+            text: "345.反转字符串中的元音字母",
+            title: "345.反转字符串中的元音字母",
+            path: "leetCode345",
           },
         ],
       }
