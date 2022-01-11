@@ -118,6 +118,21 @@ module.exports = {
                 title: "413.等差数列划分",
                 path: "leetCode413",
             },
+            {
+                text: "424.替换后的最长重复字符",
+                title: "424.替换后的最长重复字符",
+                path: "leetCode424",
+            },
+            {
+                text: "438.找到字符串中所有字母异位词",
+                title: "438.找到字符串中所有字母异位词",
+                path: "leetCode438",
+            },
+            {
+                text: "443.压缩字符串",
+                title: "443.压缩字符串",
+                path: "leetCode443",
+            },
         ],
     }
     ]
