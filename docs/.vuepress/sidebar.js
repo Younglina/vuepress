@@ -133,6 +133,26 @@ module.exports = {
                 title: "443.压缩字符串",
                 path: "leetCode443",
             },
+            {
+                text: "485.最大连续 1 的个数",
+                title: "485.最大连续 1 的个数",
+                path: "leetCode485",
+            },
+            {
+                text: "524.通过删除字母匹配到字典里最长单词",
+                title: "524.通过删除字母匹配到字典里最长单词",
+                path: "leetCode524",
+            },
+            {
+                text: "581.最短无序连续子数组",
+                title: "581.最短无序连续子数组",
+                path: "leetCode581",
+            },
+            {
+                text: "594.最长和谐子序列",
+                title: "594.最长和谐子序列",
+                path: "leetCode594",
+            },
         ],
     }
     ]
