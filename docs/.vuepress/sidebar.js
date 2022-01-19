@@ -153,6 +153,16 @@ module.exports = {
                 title: "594.最长和谐子序列",
                 path: "leetCode594",
             },
+            {
+                text: "611.有效三角形的个数",
+                title: "611.有效三角形的个数",
+                path: "leetCode611",
+            },
+            {
+                text: "633.平方数之和",
+                title: "633.平方数之和",
+                path: "leetCode633",
+            },
         ],
     }
     ]

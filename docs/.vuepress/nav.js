@@ -102,6 +102,14 @@ module.exports = [
                 text: "594.最长和谐子序列",
                 link: "/write/algorithms/leetCode594",
             },
+            {
+                text: "611.有效三角形的个数",
+                link: "/write/algorithms/leetCode611",
+            },
+            {
+                text: "633.平方数之和",
+                link: "/write/algorithms/leetCode633",
+            },
         ],
     },
     // {
