@@ -20,6 +20,11 @@ module.exports = {
                     title: "代码规范格式化配置",
                     path: "codeFormat",
                 },
+                {
+                    text: "vuepress本地复制代码插件",
+                    title: "vuepress本地复制代码插件",
+                    path: "vuepressPlugin",
+                },
             ],
         },
     ],
@@ -162,6 +167,11 @@ module.exports = {
                 text: "633.平方数之和",
                 title: "633.平方数之和",
                 path: "leetCode633",
+            },
+            {
+                text: "825.适龄的朋友",
+                title: "825.适龄的朋友",
+                path: "leetCode825",
             },
         ],
     }

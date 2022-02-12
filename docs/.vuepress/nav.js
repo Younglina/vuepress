@@ -6,6 +6,7 @@ module.exports = [
             { text: "Vue3配置", link: "/write/docs/Vue3Config" },
             { text: "搭建vuepress", link: "/write/docs/VuepressConfig" },
             { text: "代码规范格式化配置", link: "/write/docs/codeFormat" },
+            { text: "vuepress本地复制代码插件", link: "/write/docs/vuepressPlugin" },
         ],
     },
     {
@@ -109,6 +110,10 @@ module.exports = [
             {
                 text: "633.平方数之和",
                 link: "/write/algorithms/leetCode633",
+            },
+            {
+                text: "825.适龄的朋友",
+                link: "/write/algorithms/leetCode825",
             },
         ],
     },

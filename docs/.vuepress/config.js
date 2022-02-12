@@ -89,6 +89,14 @@ module.exports = {
         clientSecret: '818fcfd021439c0210fa4bc9dd547ce0944ca87180634d675a77a525814ea77a',
         autoCreateIssue: true,
       }
-    ]
+    ],
+    [
+      require('./vuepress-plugin-code-copy'),
+      {
+        'copybuttonText': '复制',
+        'copiedButtonText': '已复制！'
+      }
+    ],
+
   ],
 };
