@@ -173,6 +173,11 @@ module.exports = {
                 title: "825.适龄的朋友",
                 path: "leetCode825",
             },
+            {
+                text: "881.救生艇",
+                title: "881.救生艇",
+                path: "leetCode881",
+            },
         ],
     }
     ]

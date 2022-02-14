@@ -115,6 +115,10 @@ module.exports = [
                 text: "825.适龄的朋友",
                 link: "/write/algorithms/leetCode825",
             },
+            {
+                text: "881.救生艇",
+                link: "/write/algorithms/leetCode881",
+            },
         ],
     },
     // {
