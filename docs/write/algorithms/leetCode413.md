@@ -1,13 +1,13 @@
 ---
 title: 413.等差数列划分
 author: Younglina
-date: '2022-01-09'
+date: '2022-01-16'
 showAccessNumber: true
 categories:
  - 算法
 tags:
  - 刷题
- - 双指针
+ - 模拟
  - 中等
 ---
 ## 题目描述
@@ -35,12 +35,12 @@ tags:
 -1000 <= nums[i] <= 1000  
 :::
 
-## 思路
+## 思路1
 1. 根据描述`至少有三个元素`,如果数组长度小于3直接返回，也是为了循环直接从下标2开始
 2. 定义两个变量`r`存储总排列个数,`c`存储每组的排列个数
-3. 每有符合等差条件情况c自增，r累加c
+3. 每有符合等差条件情况`c`自增，`r`累加`c`
 
-## 题解
+## 题解1
 ```javascript
 var numberOfArithmeticSlices = function(n) {
     if(n.length<3) return 0;
@@ -53,5 +53,28 @@ var numberOfArithmeticSlices = function(n) {
         }
     }
     return r
+};
+```
+## 思路2
+1. 根据描述`至少有三个元素`,如果数组长度小于3直接返回，也是为了循环直接从下标2开始
+2. 定义两个变量`res`存储总排列个数,`step`存储每组的排列个数,`diff`为等差
+3. 每有符合等差条件情况`step`自增，`res`累加`step`,否则`diff`等于新等差，`step`清0
+
+## 题解2
+```javascript
+var numberOfArithmeticSlices = function(nums) {
+    let len = nums.length,step=0,res=0
+    if(len < 3) return 0
+    let diff = nums[1]-nums[0]
+    for(let i =2;i<len;i++){
+        if(nums[i]-nums[i-1] === diff){
+            step++
+            res+=step
+        }else{
+            step = 0
+            diff = nums[i]-nums[i-1]
+        }
+    }
+    return res
 };
 ```

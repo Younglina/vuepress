@@ -8,7 +8,7 @@ categories:
 tags:
  - 刷题
  - 双指针
- - 中等
+ - 简单
 ---
 ## 题目描述
 [26.删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)  

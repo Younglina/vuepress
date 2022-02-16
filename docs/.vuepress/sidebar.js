@@ -173,7 +173,28 @@ module.exports = {
                 title: "825.适龄的朋友",
                 path: "leetCode825",
             },
+            {
+                text: "881.救生艇", 
+                title: "881.救生艇",
+                path: "leetCode881",
+            },
+            {
+                text: "930.和相同的二元字数组",
+                title: "930.和相同的二元字数组",
+                path: "leetCode930",
+            },
         ],
     }
-    ]
+    ],
+    'write/algorithms-temp/':
+    {
+        text: "算法模版",
+        items: [
+            {
+                text: "数据有序，相同元素保留 `k` 位模版",
+                title: "数据有序，相同元素保留 `k` 位模版",
+                path: "remove-duplicates",
+            }
+        ]
+    }
 }

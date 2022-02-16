@@ -8,7 +8,7 @@ categories:
 tags:
  - 刷题
  - 双指针
- - 中等
+ - 简单
 ---
 ## 题目描述
 [88.合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)  

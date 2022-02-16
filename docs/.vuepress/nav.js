@@ -115,8 +115,25 @@ module.exports = [
                 text: "825.适龄的朋友",
                 link: "/write/algorithms/leetCode825",
             },
+            {
+                text: "881.救生艇",
+                link: "/write/algorithms/leetCode881",
+            },
+            {
+                text: "930.和相同的二元字数组",
+                link: "/write/algorithms/leetCode930",
+            },
         ],
     },
+    {
+        text: "算法模版",
+        items: [
+            {
+                text: "数据有序，相同元素保留 `k` 位模版",
+                link: "/write/algorithms-temp/remove-duplicates",
+            }
+        ]
+    }
     // {
     //   text: "Younglina",
     //   items: [
