@@ -90,13 +90,18 @@ module.exports = {
         autoCreateIssue: true,
       }
     ],
-    // [
-    //   require('./vuepress-plugin-code-copy'),
-    //   {
-    //     'copybuttonText': '复制',
-    //     'copiedButtonText': '已复制！'
-    //   }
-    // ],
-
+    [
+      require('./vuepress-plugin-code-copy'),
+      {
+        'copybuttonText': '复制',
+        'copiedButtonText': '已复制！'
+      }
+    ],
+    // ["vuepress-plugin-nuggets-style-copy", {
+    //     copyText: "复制代码",
+    //     tip: {
+    //         content: "复制成功"
+    //     }
+    // }]
   ],
 };
