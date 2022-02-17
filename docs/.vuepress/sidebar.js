@@ -77,7 +77,7 @@ module.exports = {
         title: "算法学习",
         path: "/",
         collapsable: false,
-        items: [
+        children: [
             {
                 text: "03.无重复字符的最长子串",
                 title: "03.无重复字符的最长子串",
@@ -183,17 +183,32 @@ module.exports = {
                 title: "930.和相同的二元字数组",
                 path: "leetCode930",
             },
+            {
+                text: "992.K个不同整数的子数组",
+                title: "992.K个不同整数的子数组",
+                path: "leetCode992",
+            },
+            {
+                text: "1004.最大连续1的个数 III",
+                title: "1004.最大连续1的个数 III",
+                path: "leetCode1004",
+            },
         ],
     }
     ],
     'write/algorithms-temp/':
     {
         text: "算法模版",
-        items: [
+        children: [
             {
                 text: "数据有序，相同元素保留 `k` 位模版",
                 title: "数据有序，相同元素保留 `k` 位模版",
                 path: "remove-duplicates",
+            },
+            {
+                text: "滑动窗口模板",
+                title: "滑动窗口模板",
+                path: "sliding-window",
             }
         ]
     }

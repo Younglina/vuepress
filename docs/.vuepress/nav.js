@@ -123,6 +123,14 @@ module.exports = [
                 text: "930.和相同的二元字数组",
                 link: "/write/algorithms/leetCode930",
             },
+            {
+                text: "992.K个不同整数的子数组",
+                link: "/write/algorithms/leetCode992",
+            },
+            {
+                text: "1004.最大连续1的个数 III",
+                link: "/write/algorithms/leetCode1004",
+            },
         ],
     },
     {
@@ -131,6 +139,10 @@ module.exports = [
             {
                 text: "数据有序，相同元素保留 `k` 位模版",
                 link: "/write/algorithms-temp/remove-duplicates",
+            },
+            {
+                text: "滑动窗口模板",
+                link: "/write/algorithms-temp/sliding-window",
             }
         ]
     }
