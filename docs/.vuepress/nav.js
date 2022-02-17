@@ -145,6 +145,15 @@ module.exports = [
                 link: "/write/algorithms-temp/sliding-window",
             }
         ]
+    },
+    {
+        text: "Vue设计与实现读书记录",
+        items: [
+            {
+                text: "3.2 渲染器",
+                link: "/write/vueBook/render",
+            }
+        ]
     }
     // {
     //   text: "Younglina",

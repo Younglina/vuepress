@@ -211,5 +211,16 @@ module.exports = {
                 path: "sliding-window",
             }
         ]
+    },
+    'write/vueBook/':
+    {
+        text: "Vue设计与实现读书记录",
+        children: [
+            {
+                text: "3.2 渲染器",
+                title: "3.2 渲染器",
+                path: "/write/vueBook/render",
+            }
+        ]
     }
 }
