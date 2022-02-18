@@ -131,6 +131,10 @@ module.exports = [
                 text: "1004.最大连续1的个数 III",
                 link: "/write/algorithms/leetCode1004",
             },
+            {
+                text: "1221.分割平衡字符串",
+                link: "/write/algorithms/leetCode1221",
+            },
         ],
     },
     {

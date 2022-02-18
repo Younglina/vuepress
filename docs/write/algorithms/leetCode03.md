@@ -8,6 +8,7 @@ categories:
 tags:
  - 刷题
  - 双指针
+ - 滑动窗口
  - 中等
 ---
 
@@ -47,30 +48,38 @@ tags:
 0 <= s.length <= 5 * 104  
 s 由英文字母、数字、符号和空格组成
 :::
-
-## 思路
-参考[宫水三叶](https://github.com/SharingSource/LogicStack-LeetCode/blob/main/LeetCode/1-10/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2%EF%BC%88%E4%B8%AD%E7%AD%89%EF%BC%89.md)  
-定义两个指针 `start` 和 `end`，表示当前处理到的子串是 `[start,end]`。
-`[start,end]` 始终满足要求：无重复字符。
-从前往后进行扫描，同时维护一个哈希表记录 `[start,end]` 中每个字符出现的次数。
-遍历过程中，`end` 不断自增，将第 end 个字符在哈希表中出现的次数加一。
-令 `right` 为 下标 `end` 对应的字符，当满足 `map.get(right) > 1` 时，代表此前出现过第 `end` 位对应的字符。
-此时更新 `start` 的位置（使其右移），直到不满足 `map.get(right) > 1` （代表 `[start,end]` 恢复满足无重复字符的条件）。同时使用 `[start,end]` 长度更新答案。
-
-## 题解
+## 思路1
+直接套用滑动窗口模板
+## 题解1
 ```javascript
 var lengthOfLongestSubstring = function(s) {
-    let map = {},res = 0
-    for(let start = 0, end = 0; end < s.length; end++){
-      let right = s[end]
-      map[right] = (map[right] || 0) + 1
-      while(map[right]>1){
-        let left = s[start]
-        map[left]--
-        start++
+    let len = s.length,l=0,r=0,c=0,ca={},res=0
+    while(r<len){
+      ca[s[r]] = (ca[s[r]] || 0) + 1
+      if(ca[s[r]]===1) c++
+      while(r-l+1 > c){
+        if(--ca[s[l++]]===0) c--
       }
-      res = Math.max(res, end-start+1)
+      r++
+      res = Math.max(res, c)
     }
-    return res
+};
+```
+## 思路2
+1. 定义双指针`l,r`，`r`遍历`s`
+2. 定义哈希表`map`存储当前字符所对应下标
+3. 如果当前字符已存在于`map`，则移动`l`至`Math.max(map.get(s[r])+1, l)`
+## 题解2
+```javascript
+var lengthOfLongestSubstring = function(s) {
+    let map = new Map(),max = 0;
+    for(let i = 0,j=0;i<s.length;i++){
+        if(map.has(s[i])){
+            j = Math.max(map.get(s[i])+1,j) ;
+        }
+        max = Math.max(max,i-j+1)
+        map.set(s[i],i)
+    }
+    return max
 };
 ```

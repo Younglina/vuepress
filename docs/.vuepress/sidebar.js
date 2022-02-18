@@ -193,6 +193,11 @@ module.exports = {
                 title: "1004.最大连续1的个数 III",
                 path: "leetCode1004",
             },
+            {
+                text: "1221.分割平衡字符串",
+                title: "1221.分割平衡字符串",
+                path: "leetCode1221",
+            },
         ],
     }
     ],
