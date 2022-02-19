@@ -135,6 +135,14 @@ module.exports = [
                 text: "1221.分割平衡字符串",
                 link: "/write/algorithms/leetCode1221",
             },
+            {
+                text: "242.有效的字母异位词",
+                link: "/write/algorithms/leetCode242",
+            },
+            {
+                text: "20.有效的括号",
+                link: "/write/algorithms/leetCode20",
+            },
         ],
     },
     {

@@ -174,7 +174,7 @@ module.exports = {
                 path: "leetCode825",
             },
             {
-                text: "881.救生艇", 
+                text: "881.救生艇",
                 title: "881.救生艇",
                 path: "leetCode881",
             },
@@ -197,6 +197,16 @@ module.exports = {
                 text: "1221.分割平衡字符串",
                 title: "1221.分割平衡字符串",
                 path: "leetCode1221",
+            },
+            {
+                text: "242.有效的字母异位词",
+                title: "242.有效的字母异位词",
+                path: "leetCode242",
+            },
+            {
+                text: "20.有效的括号",
+                title: "20.有效的括号",
+                path: "leetCode20",
             },
         ],
     }
