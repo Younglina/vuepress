@@ -143,6 +143,14 @@ module.exports = [
                 text: "20.有效的括号",
                 link: "/write/algorithms/leetCode20",
             },
+            {
+                text: "1446.连续字符",
+                link: "/write/algorithms/leetCode1446",
+            },
+            {
+                text: "30.串联所有单词的子串",
+                link: "/write/algorithms/leetCode30",
+            },
         ],
     },
     {
