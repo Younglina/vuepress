@@ -17,7 +17,8 @@ module.exports = {
   theme: "reco",
   themeConfig: {
     type: "blog",
-    sidebarDepth: 2, //子标题
+    sidebarDepth: 2, //
+    lastUpdated: '上次更新', 
     author: 'Younglina',
     showAccessNumber: true,
     subSidebar: "auto",
