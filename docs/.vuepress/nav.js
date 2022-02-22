@@ -151,6 +151,14 @@ module.exports = [
                 text: "30.串联所有单词的子串",
                 link: "/write/algorithms/leetCode30",
             },
+            {
+                text: "219.存在重复元素 II",
+                link: "/write/algorithms/leetCode219",
+            },
+            {
+                text: "187.重复的DNA序列",
+                link: "/write/algorithms/leetCode187",
+            },
         ],
     },
     {

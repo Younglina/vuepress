@@ -218,6 +218,16 @@ module.exports = {
                 title: "30.串联所有单词的子串",
                 path: "leetCode30",
             },
+            {
+                text: "219.存在重复元素 II",
+                title: "219.存在重复元素 II",
+                path: "leetCode219",
+            },
+            {
+                text: "187.重复的DNA序列",
+                title: "187.重复的DNA序列",
+                path: "leetCode187",
+            },
         ],
     }
     ],

@@ -43,12 +43,14 @@ module.exports = {
       ]
     }
   },
-  //百度统计
   head: [
+    ['meta',{name:'keywords',content:'Younglina,younglina,算法,vuepress,博客'}],
+    ['meta',{name:'author',content:'Younglina'}],
     [
       'link',
       { rel: 'icon', herf: '"/younglinaBlog/favicon.ico' }
     ],
+    //百度统计
     [
       "script",
       {},
