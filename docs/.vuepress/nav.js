@@ -159,6 +159,10 @@ module.exports = [
                 text: "187.重复的DNA序列",
                 link: "/write/algorithms/leetCode187",
             },
+            {
+                text: "567.字符串的排列",
+                link: "/write/algorithms/leetCode567",
+            },
         ],
     },
     {
@@ -171,6 +175,10 @@ module.exports = [
             {
                 text: "滑动窗口模板",
                 link: "/write/algorithms-temp/sliding-window",
+            },
+            {
+                text: "从一个字符串中找另一个字符串模版",
+                link: "/write/algorithms-temp/find-str-in-other",
             }
         ]
     },

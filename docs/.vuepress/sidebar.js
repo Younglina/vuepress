@@ -228,6 +228,11 @@ module.exports = {
                 title: "187.重复的DNA序列",
                 path: "leetCode187",
             },
+            {
+                text: "567.字符串的排列",
+                title: "567.字符串的排列",
+                path: "leetCode567",
+            },
         ],
     }
     ],
@@ -244,6 +249,11 @@ module.exports = {
                 text: "滑动窗口模板",
                 title: "滑动窗口模板",
                 path: "sliding-window",
+            },
+            {
+                text: "从一个字符串中找另一个字符串模版",
+                title: "从一个字符串中找另一个字符串模版",
+                path: "find-str-in-other",
             }
         ]
     },
