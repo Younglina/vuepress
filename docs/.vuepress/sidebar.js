@@ -233,6 +233,11 @@ module.exports = {
                 title: "567.字符串的排列",
                 path: "leetCode567",
             },
+            {
+                text: "1208.尽可能使字符串相等",
+                title: "1208.尽可能使字符串相等",
+                path: "leetCode1208",
+            },
         ],
     }
     ],

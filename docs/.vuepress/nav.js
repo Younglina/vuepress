@@ -163,6 +163,10 @@ module.exports = [
                 text: "567.字符串的排列",
                 link: "/write/algorithms/leetCode567",
             },
+            {
+                text: "1208.尽可能使字符串相等",
+                link: "/write/algorithms/leetCode1208",
+            },
         ],
     },
     {
