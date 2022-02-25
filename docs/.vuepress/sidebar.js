@@ -259,6 +259,11 @@ module.exports = {
                 text: "从一个字符串中找另一个字符串模版",
                 title: "从一个字符串中找另一个字符串模版",
                 path: "find-str-in-other",
+            },
+            {
+                text: "树的前中后序遍历",
+                title: "树的前中后序遍历",
+                path: "traverse-tree",
             }
         ]
     },

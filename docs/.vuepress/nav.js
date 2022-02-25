@@ -183,6 +183,10 @@ module.exports = [
             {
                 text: "从一个字符串中找另一个字符串模版",
                 link: "/write/algorithms-temp/find-str-in-other",
+            },
+            {
+                text: "树的前中后序遍历",
+                link: "/write/algorithms-temp/traverse-tree",
             }
         ]
     },
