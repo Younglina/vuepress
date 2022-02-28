@@ -238,6 +238,16 @@ module.exports = {
                 title: "1208.尽可能使字符串相等",
                 path: "leetCode1208",
             },
+            {
+                text: "101.对称二叉树",
+                title: "101.对称二叉树",
+                path: "leetCode101",
+            },
+            {
+                text: "112.路径总和",
+                title: "112.路径总和",
+                path: "leetCode112",
+            },
         ],
     }
     ],

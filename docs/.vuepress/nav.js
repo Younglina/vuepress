@@ -167,6 +167,13 @@ module.exports = [
                 text: "1208.尽可能使字符串相等",
                 link: "/write/algorithms/leetCode1208",
             },
+            {
+                text: "101.对称二叉树",
+                link: "/write/algorithms/leetCode101",
+            },{
+                text: "112.路径总和",
+                link: "/write/algorithms/leetCode112",
+            }
         ],
     },
     {
