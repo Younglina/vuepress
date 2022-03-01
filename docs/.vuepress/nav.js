@@ -34,6 +34,10 @@ module.exports = [
                 text: "mpvue仿网易云音乐",
                 link: "/write/project/wx-cloud-music",
             },
+            {
+                text: "看看吃啥",
+                link: "/write/project/eat",
+            },
         ],
     },
     {
@@ -170,7 +174,7 @@ module.exports = [
             {
                 text: "101.对称二叉树",
                 link: "/write/algorithms/leetCode101",
-            },{
+            }, {
                 text: "112.路径总和",
                 link: "/write/algorithms/leetCode112",
             }
