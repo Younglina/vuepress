@@ -1,6 +1,8 @@
 <template>
-    <input v-model="eats" placeholder="输入想吃的，空格隔开" class="eat-input"/>
-    <button @click="randomEat" class="eat-button">生成</button>
+    <div class="eats-contain">
+        <input v-model="eats" placeholder="输入想吃的，空格隔开" class="eat-input"/>
+        <button @click="randomEat" class="eat-button">生成</button>
+    </div>
     <p class="eat-res">{{randomEats}}</p>
 </template>
 
@@ -27,6 +29,9 @@ export default {
 }
 </script>
 <style>
+    .eats-contain{
+        display: flex;
+    }
     .eat-input{
         cursor: pointer;
         -webkit-appearance: none;
@@ -69,6 +74,7 @@ export default {
         color: #fff;
         background-color: #409eff;
         border-color: #409eff;
+        margin-left: 10px;
     }
     .eat-res{
         padding: 0 20px;
