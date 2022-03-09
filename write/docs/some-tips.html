@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一些知识 | Younglina</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" herf="&quot;/younglinaBlog/favicon.ico">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?11dbf2ebf496bab00f7e2c4d37cb33f1";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
+    <style>.content__default{max-width: unset !important;}
+      .markdown-body,.vssue,.vssue .vssue-new-comment .vssue-new-comment-input{font-size: 14px !important;}
+      .vssue-header-powered-by{display: none}</style>
+    <meta name="description" content="Younglina要加油！冲冲冲！">
+    <meta name="keywords" content="Younglina,younglina,算法,vuepress,博客">
+    <meta name="author" content="Younglina">
+    <meta name="baidu-site-verification" content="code-xdTT2SiFmc">
+    
+    <link rel="preload" href="/younglinaBlog/assets/css/0.styles.737d02ef.css" as="style"><link rel="preload" href="/younglinaBlog/assets/js/app.a8b0f7f1.js" as="script"><link rel="preload" href="/younglinaBlog/assets/js/3.2edc7f5c.js" as="script"><link rel="preload" href="/younglinaBlog/assets/js/1.0e25b129.js" as="script"><link rel="preload" href="/younglinaBlog/assets/js/55.8dae728e.js" as="script"><link rel="prefetch" href="/younglinaBlog/assets/js/10.e72703d0.js"><link rel="prefetch" href="/younglinaBlog/assets/js/11.6933b7b9.js"><link rel="prefetch" href="/younglinaBlog/assets/js/12.709c2e5b.js"><link rel="prefetch" href="/younglinaBlog/assets/js/13.ddebde8c.js"><link rel="prefetch" href="/younglinaBlog/assets/js/14.8fddcbb0.js"><link rel="prefetch" href="/younglinaBlog/assets/js/15.24fae796.js"><link rel="prefetch" href="/younglinaBlog/assets/js/16.4cca8b49.js"><link rel="prefetch" href="/younglinaBlog/assets/js/17.7c5ec18d.js"><link rel="prefetch" href="/younglinaBlog/assets/js/18.3832b2db.js"><link rel="prefetch" href="/younglinaBlog/assets/js/19.f58cd0c1.js"><link rel="prefetch" href="/younglinaBlog/assets/js/20.4f5c1ab9.js"><link rel="prefetch" href="/younglinaBlog/assets/js/21.ec53e717.js"><link rel="prefetch" href="/younglinaBlog/assets/js/22.f3029264.js"><link rel="prefetch" href="/younglinaBlog/assets/js/23.951d52e0.js"><link rel="prefetch" href="/younglinaBlog/assets/js/24.6d588b6e.js"><link rel="prefetch" href="/younglinaBlog/assets/js/25.77237ca1.js"><link rel="prefetch" href="/younglinaBlog/assets/js/26.05ec3aaa.js"><link rel="prefetch" href="/younglinaBlog/assets/js/27.08e5b140.js"><link rel="prefetch" href="/younglinaBlog/assets/js/28.ce145dad.js"><link rel="prefetch" href="/younglinaBlog/assets/js/29.7da018f8.js"><link rel="prefetch" href="/younglinaBlog/assets/js/30.4d7c10d0.js"><link rel="prefetch" href="/younglinaBlog/assets/js/31.668ee62a.js"><link rel="prefetch" href="/younglinaBlog/assets/js/32.58b24216.js"><link rel="prefetch" href="/younglinaBlog/assets/js/33.b2e9bbe0.js"><link rel="prefetch" href="/younglinaBlog/assets/js/34.701848d4.js"><link rel="prefetch" href="/younglinaBlog/assets/js/35.f58bfc9f.js"><link rel="prefetch" href="/younglinaBlog/assets/js/36.6efa8349.js"><link rel="prefetch" href="/younglinaBlog/assets/js/37.7c577463.js"><link rel="prefetch" href="/younglinaBlog/assets/js/38.a52e51f6.js"><link rel="prefetch" href="/younglinaBlog/assets/js/39.4489531f.js"><link rel="prefetch" href="/younglinaBlog/assets/js/4.154bd610.js"><link rel="prefetch" href="/younglinaBlog/assets/js/40.fe84260e.js"><link rel="prefetch" href="/younglinaBlog/assets/js/41.e03cc920.js"><link rel="prefetch" href="/younglinaBlog/assets/js/42.80e3a87e.js"><link rel="prefetch" href="/younglinaBlog/assets/js/43.0aafe170.js"><link rel="prefetch" href="/younglinaBlog/assets/js/44.3480fa7a.js"><link rel="prefetch" href="/younglinaBlog/assets/js/45.0d8302e0.js"><link rel="prefetch" href="/younglinaBlog/assets/js/46.c1038068.js"><link rel="prefetch" href="/younglinaBlog/assets/js/47.70592664.js"><link rel="prefetch" href="/younglinaBlog/assets/js/48.e9b4b900.js"><link rel="prefetch" href="/younglinaBlog/assets/js/49.0103f26b.js"><link rel="prefetch" href="/younglinaBlog/assets/js/5.d663b70b.js"><link rel="prefetch" href="/younglinaBlog/assets/js/50.b4893cf8.js"><link rel="prefetch" href="/younglinaBlog/assets/js/51.a326d930.js"><link rel="prefetch" href="/younglinaBlog/assets/js/52.88d37097.js"><link rel="prefetch" href="/younglinaBlog/assets/js/53.ecca1a19.js"><link rel="prefetch" href="/younglinaBlog/assets/js/54.17b6700c.js"><link rel="prefetch" href="/younglinaBlog/assets/js/56.22ebcedc.js"><link rel="prefetch" href="/younglinaBlog/assets/js/57.51201c14.js"><link rel="prefetch" href="/younglinaBlog/assets/js/58.26d444fb.js"><link rel="prefetch" href="/younglinaBlog/assets/js/59.d560090a.js"><link rel="prefetch" href="/younglinaBlog/assets/js/6.a8fa42a4.js"><link rel="prefetch" href="/younglinaBlog/assets/js/60.537cc1fa.js"><link rel="prefetch" href="/younglinaBlog/assets/js/61.2643ba40.js"><link rel="prefetch" href="/younglinaBlog/assets/js/62.fb8597d4.js"><link rel="prefetch" href="/younglinaBlog/assets/js/7.abf76fbc.js"><link rel="prefetch" href="/younglinaBlog/assets/js/8.85bf16c6.js"><link rel="prefetch" href="/younglinaBlog/assets/js/9.49e52968.js">
+    <link rel="stylesheet" href="/younglinaBlog/assets/css/0.styles.737d02ef.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Younglina</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>Younglina要加油！冲冲冲！</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>Younglina</span>
+            
+          <span data-v-25ba6db2>2021 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/younglinaBlog/" class="home-link router-link-active"><img src="/younglinaBlog/avatar.jpg" alt="Younglina" class="logo"> <span class="site-name">Younglina</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/younglinaBlog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/Vue3Config.html" class="nav-link"><i class="undefined"></i>
+  Vue3配置
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/VuepressConfig.html" class="nav-link"><i class="undefined"></i>
+  搭建vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/codeFormat.html" class="nav-link"><i class="undefined"></i>
+  代码规范格式化配置
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/vuepressPlugin.html" class="nav-link"><i class="undefined"></i>
+  vuepress本地复制代码插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      源码阅读
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/sourceRead/element-make-new.html" class="nav-link"><i class="undefined"></i>
+  ElemetUI make new
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/sourceRead/only-allow.html" class="nav-link"><i class="undefined"></i>
+  包管理器only-allow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/electron-cloud-music.html" class="nav-link"><i class="undefined"></i>
+  electron仿网易云音乐桌面版
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/my-trao.html" class="nav-link"><i class="undefined"></i>
+  trao开发微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/wx-cloud-music.html" class="nav-link"><i class="undefined"></i>
+  mpvue仿网易云音乐
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/eat.html" class="nav-link"><i class="undefined"></i>
+  看看吃啥
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode03.html" class="nav-link"><i class="undefined"></i>
+  03.无重复字符的最长子串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode11.html" class="nav-link"><i class="undefined"></i>
+  11.盛水最多的容器
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode15.html" class="nav-link"><i class="undefined"></i>
+  15.三数之和
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode19.html" class="nav-link"><i class="undefined"></i>
+  19.删除链表的倒数第 N 个结点
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode26.html" class="nav-link"><i class="undefined"></i>
+  26.删除有序数组中的重复项
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode27.html" class="nav-link"><i class="undefined"></i>
+  27.移除元素
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode88.html" class="nav-link"><i class="undefined"></i>
+  88.合并两个有序数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode345.html" class="nav-link"><i class="undefined"></i>
+  345.反转字符串中的元音字母
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode413.html" class="nav-link"><i class="undefined"></i>
+  413.等差数列划分
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode424.html" class="nav-link"><i class="undefined"></i>
+  424.替换后的最长重复字符
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode438.html" class="nav-link"><i class="undefined"></i>
+  438.找到字符串中所有字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode443.html" class="nav-link"><i class="undefined"></i>
+  443.压缩字符串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode485.html" class="nav-link"><i class="undefined"></i>
+  485.最大连续 1 的个数
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode524.html" class="nav-link"><i class="undefined"></i>
+  524.通过删除字母匹配到字典里最长单词
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode581.html" class="nav-link"><i class="undefined"></i>
+  581.最短无序连续子数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode594.html" class="nav-link"><i class="undefined"></i>
+  594.最长和谐子序列
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode611.html" class="nav-link"><i class="undefined"></i>
+  611.有效三角形的个数
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode633.html" class="nav-link"><i class="undefined"></i>
+  633.平方数之和
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode825.html" class="nav-link"><i class="undefined"></i>
+  825.适龄的朋友
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode881.html" class="nav-link"><i class="undefined"></i>
+  881.救生艇
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode930.html" class="nav-link"><i class="undefined"></i>
+  930.和相同的二元字数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode992.html" class="nav-link"><i class="undefined"></i>
+  992.K个不同整数的子数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1004.html" class="nav-link"><i class="undefined"></i>
+  1004.最大连续1的个数 III
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1221.html" class="nav-link"><i class="undefined"></i>
+  1221.分割平衡字符串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode242.html" class="nav-link"><i class="undefined"></i>
+  242.有效的字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode20.html" class="nav-link"><i class="undefined"></i>
+  20.有效的括号
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1446.html" class="nav-link"><i class="undefined"></i>
+  1446.连续字符
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode30.html" class="nav-link"><i class="undefined"></i>
+  30.串联所有单词的子串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode219.html" class="nav-link"><i class="undefined"></i>
+  219.存在重复元素 II
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode187.html" class="nav-link"><i class="undefined"></i>
+  187.重复的DNA序列
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode567.html" class="nav-link"><i class="undefined"></i>
+  567.字符串的排列
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1208.html" class="nav-link"><i class="undefined"></i>
+  1208.尽可能使字符串相等
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode101.html" class="nav-link"><i class="undefined"></i>
+  101.对称二叉树
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode112.html" class="nav-link"><i class="undefined"></i>
+  112.路径总和
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法模版
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/remove-duplicates.html" class="nav-link"><i class="undefined"></i>
+  数据有序，相同元素保留 `k` 位模版
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/sliding-window.html" class="nav-link"><i class="undefined"></i>
+  滑动窗口模板
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/find-str-in-other.html" class="nav-link"><i class="undefined"></i>
+  从一个字符串中找另一个字符串模版
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/traverse-tree.html" class="nav-link"><i class="undefined"></i>
+  树的前中后序遍历
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      Vue设计与实现读书记录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/vueBook/render.html" class="nav-link"><i class="undefined"></i>
+  3.2 渲染器
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><img src="/younglinaBlog/avatar.jpg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    Younglina
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>50</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>26</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9><li class="social-item" data-v-39576ba9><i class="iconfont reco-github" style="color:#f47e60;" data-v-39576ba9></i></li><li class="social-item" data-v-39576ba9><i class="iconfont reco-mayun" style="color:#f26d6d;" data-v-39576ba9></i></li><li class="social-item" data-v-39576ba9><i class="iconfont reco-juejin" style="color:#e15b64;" data-v-39576ba9></i></li></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/younglinaBlog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/Vue3Config.html" class="nav-link"><i class="undefined"></i>
+  Vue3配置
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/VuepressConfig.html" class="nav-link"><i class="undefined"></i>
+  搭建vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/codeFormat.html" class="nav-link"><i class="undefined"></i>
+  代码规范格式化配置
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/docs/vuepressPlugin.html" class="nav-link"><i class="undefined"></i>
+  vuepress本地复制代码插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      源码阅读
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/sourceRead/element-make-new.html" class="nav-link"><i class="undefined"></i>
+  ElemetUI make new
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/sourceRead/only-allow.html" class="nav-link"><i class="undefined"></i>
+  包管理器only-allow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/electron-cloud-music.html" class="nav-link"><i class="undefined"></i>
+  electron仿网易云音乐桌面版
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/my-trao.html" class="nav-link"><i class="undefined"></i>
+  trao开发微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/wx-cloud-music.html" class="nav-link"><i class="undefined"></i>
+  mpvue仿网易云音乐
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/project/eat.html" class="nav-link"><i class="undefined"></i>
+  看看吃啥
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode03.html" class="nav-link"><i class="undefined"></i>
+  03.无重复字符的最长子串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode11.html" class="nav-link"><i class="undefined"></i>
+  11.盛水最多的容器
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode15.html" class="nav-link"><i class="undefined"></i>
+  15.三数之和
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode19.html" class="nav-link"><i class="undefined"></i>
+  19.删除链表的倒数第 N 个结点
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode26.html" class="nav-link"><i class="undefined"></i>
+  26.删除有序数组中的重复项
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode27.html" class="nav-link"><i class="undefined"></i>
+  27.移除元素
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode88.html" class="nav-link"><i class="undefined"></i>
+  88.合并两个有序数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode345.html" class="nav-link"><i class="undefined"></i>
+  345.反转字符串中的元音字母
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode413.html" class="nav-link"><i class="undefined"></i>
+  413.等差数列划分
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode424.html" class="nav-link"><i class="undefined"></i>
+  424.替换后的最长重复字符
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode438.html" class="nav-link"><i class="undefined"></i>
+  438.找到字符串中所有字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode443.html" class="nav-link"><i class="undefined"></i>
+  443.压缩字符串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode485.html" class="nav-link"><i class="undefined"></i>
+  485.最大连续 1 的个数
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode524.html" class="nav-link"><i class="undefined"></i>
+  524.通过删除字母匹配到字典里最长单词
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode581.html" class="nav-link"><i class="undefined"></i>
+  581.最短无序连续子数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode594.html" class="nav-link"><i class="undefined"></i>
+  594.最长和谐子序列
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode611.html" class="nav-link"><i class="undefined"></i>
+  611.有效三角形的个数
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode633.html" class="nav-link"><i class="undefined"></i>
+  633.平方数之和
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode825.html" class="nav-link"><i class="undefined"></i>
+  825.适龄的朋友
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode881.html" class="nav-link"><i class="undefined"></i>
+  881.救生艇
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode930.html" class="nav-link"><i class="undefined"></i>
+  930.和相同的二元字数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode992.html" class="nav-link"><i class="undefined"></i>
+  992.K个不同整数的子数组
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1004.html" class="nav-link"><i class="undefined"></i>
+  1004.最大连续1的个数 III
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1221.html" class="nav-link"><i class="undefined"></i>
+  1221.分割平衡字符串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode242.html" class="nav-link"><i class="undefined"></i>
+  242.有效的字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode20.html" class="nav-link"><i class="undefined"></i>
+  20.有效的括号
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1446.html" class="nav-link"><i class="undefined"></i>
+  1446.连续字符
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode30.html" class="nav-link"><i class="undefined"></i>
+  30.串联所有单词的子串
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode219.html" class="nav-link"><i class="undefined"></i>
+  219.存在重复元素 II
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode187.html" class="nav-link"><i class="undefined"></i>
+  187.重复的DNA序列
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode567.html" class="nav-link"><i class="undefined"></i>
+  567.字符串的排列
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode1208.html" class="nav-link"><i class="undefined"></i>
+  1208.尽可能使字符串相等
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode101.html" class="nav-link"><i class="undefined"></i>
+  101.对称二叉树
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms/leetCode112.html" class="nav-link"><i class="undefined"></i>
+  112.路径总和
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法模版
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/remove-duplicates.html" class="nav-link"><i class="undefined"></i>
+  数据有序，相同元素保留 `k` 位模版
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/sliding-window.html" class="nav-link"><i class="undefined"></i>
+  滑动窗口模板
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/find-str-in-other.html" class="nav-link"><i class="undefined"></i>
+  从一个字符串中找另一个字符串模版
+</a></li><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/algorithms-temp/traverse-tree.html" class="nav-link"><i class="undefined"></i>
+  树的前中后序遍历
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      Vue设计与实现读书记录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/younglinaBlog/write/vueBook/render.html" class="nav-link"><i class="undefined"></i>
+  3.2 渲染器
+</a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/younglinaBlog/write/docs/Vue3Config.html" class="sidebar-link">Vue3配置</a></li><li><a href="/younglinaBlog/write/docs/VuepressConfig.html" class="sidebar-link">搭建vuepress</a></li><li><a href="/younglinaBlog/write/docs/codeFormat.html" class="sidebar-link">代码规范格式化配置</a></li><li><a href="/younglinaBlog/write/docs/vuepressPlugin.html" class="sidebar-link">vuepress本地复制代码插件</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>一些知识</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>Younglina</span>
+            
+          <span data-v-25ba6db2>2021 - </span>
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page"><section><div class="page-title"><h1 class="title">一些知识</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>Younglina</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>2018/2/16</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>记录</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="跨域"><a href="#跨域" class="header-anchor">#</a> 跨域</h2> <div class="language- extra-class"><pre><code>同源：相同协议，相同域名，相同端口。
+</code></pre></div><h2 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h2> <div class="language- extra-class"><pre><code>闭包在 JavaScript 中常用来实现对象数据的私有
+什么是闭包？
+简言之，闭包是由函数引用其周边状态（词法环境）绑在一起形成的（封装）组合结构。在 JavaScript 中，闭包在每个函数被创建时形成。
+闭包让我们能够从一个函数内部访问其外部函数的作用域。
+要使用闭包，只需要简单地将一个函数定义在另一个函数内部，并将它暴露出来。要暴露一个函数，可以将它返回或者传给其他函数。
+</code></pre></div><h2 id="ssl-工作原理"><a href="#ssl-工作原理" class="header-anchor">#</a> SSL 工作原理</h2> <p>SSL(Server socket layer) 是一种保证网络两个节点进行安全通信的协议。SSL 和 TLS 建立在 TCP/IP 协议基础上。建立在 SSL 上的 HTTP 协议称为 HTTPS，默认端口 443。SSL 使用加密技术实现会话双方信息的安全传递。</p> <h2 id="ssl-加密类型"><a href="#ssl-加密类型" class="header-anchor">#</a> SSL 加密类型</h2> <div class="language- extra-class"><pre><code>有两种基本的加解密算法类型：
+
+1. 对称加密
+密钥只有一个，加密解密为同一个密码，且加解密速度快，典型的对称加密算法有DES、AES，RC5，3DES等；对称加密主要问题是共享秘钥，除你的计算机（客户端）知道另外一台计算机（服务器）的私钥秘钥，否则无法对通信流进行加密解密。
+
+2. 非对称加密
+使用两个秘钥：公共秘钥和私有秘钥。私有秘钥由一方密码保存（一般是服务器保存），另一方任何人都可以获得公共秘钥。
+获取证书（经过CA认证过的公钥）有两种方式
+
+1. 从权威机制购买证书。
+安全证书由国际权威的证书机构(CA)，如VeriSign和Thawte颁发，它们保证了证书的可信性。一个安全证书只对一个IP有效，多个IP必需购买多个证书。
+
+2. 创建自我签名的证书。
+如果通信双方只关心数据在网络上的可以安全传输，并不需要对方进行身份验证，这种情况下，可以创建自多签名证书。这证书达不到身份认证的目的，但可以用于加密通信。
+SSL握手
+SSL 连接总是由客户端启动的。在SSL 会话开始时执行 SSL 握手。此握手产生会话的密码参数。关于如何处理 SSL 握手的简单概述，如下图所示。此示例假设已在 Web 浏览器 和 Web 服务器间建立了 SSL 连接。
+</code></pre></div><h2 id="html5-有哪些新特性、移除了那些元素"><a href="#html5-有哪些新特性、移除了那些元素" class="header-anchor">#</a> html5 有哪些新特性、移除了那些元素</h2> <div class="language- extra-class"><pre><code>新特性:
+（1）语意化更好的内容元素，比如 article、footer、header、nav、section，表单控件，calendar、date、time、email、url、search;
+（2）一些功能标签，如绘画 canvas，用于媒介播放的 video 和 audio 元素;
+（3）本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;sessionStorage 的数据在浏览器关闭后自动删除;
+（4）新的技术，如webworker, websocket, Geolocation;
+**移除的元素：**
+（1）纯表现的元素：basefont，big，center，font, s，strike，tt，u;
+（2）对可用性产生负面影响的元素：frame，frameset，noframes；
+    cookies，session,sessionStroage和localStorage的区别：
+cookies，sessionStroage和localStorage是在客户端，session是在服务器端。服务器端的session机制， session 对象数据保存在服务器上。
+实现上，服务器和浏览器之间仅需传递session id即可，服务器根据session id找到对应用户的session对象。会话数据仅在一段时间内有效，这个时间就是server端设置的session有效期。服务器session存储数据安全一些，一般存放用户信息，浏览器只适合存储一般数据
+其次，是**cookies，sessionStroage和localStorage三者的区别**：
+（1）cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存（2）存储大小限制也不同，cookie数据不能超过4k，同时因为每次Http请求都会携带cookie（这里可能还会追问，cookie是在http报文什么地方，答:cookie是携带在http请求头上的），所以cookie只适合保存很小的数据，比如会话标识sessionStroage和localstroage虽然也有大小限制，但是比cookie大很多，可以达到5M；
+（3） 数据有效期也不同，cookie在设置的有效期（服务端设置）内有效，不管窗口或者浏览器是否关闭，sessionStroage仅在当前浏览器窗口关闭前有效（也就是说只要这个浏览器窗口没有关闭，即使刷新页面或进入同源另一页面，数据仍然存在。关闭窗口后，sessionStorage即被销毁）；localStroage始终有效，窗口或者浏览器关闭也一直保存；
+（4） Web storage 支持事件通知机制，可以将数据更新的通知发送给监听者。如下：
+	`window.addEventListener(&quot;storage&quot;, function (e) {`
+	        `alert(e.newValue);`
+	    `});`
+Web Storage带来的好处： 减少网络流量：一旦数据保存在本地后，就可以避免再向服务器请求数据，因此减少不必要的数据请求，减少数据在浏览器和服务器间不必要地来回传递。 快速显示数据：性能好，从本地读数据比通过网络从服务器获得数据快得多，本地数据可以即时获得。再加上网页本身也可以有缓存，因此整个页面和数据都在本地的话，可以立即显示。 临时存储：很多时候数据只需要在用户浏览一组页面期间使用，关闭窗口后数据就可以丢弃了，这种情况使用sessionStorage非常方便。
+</code></pre></div><h2 id="前端页面优化"><a href="#前端页面优化" class="header-anchor">#</a> 前端页面优化</h2> <div class="language- extra-class"><pre><code>1.http请求优化
+	(1)减少HTTP请求
+		* 压缩合并js、css文件，可配置webpack使其合并成一个唯一出口文件
+</code></pre></div><p>_ 延迟加载
+_ 雪碧图 CSS Sprite 一种 CSS 图像合并技术，该方法是将小图标和背景图像合并到一张图片上，然后利用 css 的背景定位
+来显示需要显示的图片部分。
+(2)预加载 预先判断需要加载的数据，达到指定条件以后直接从浏览器缓存中获取 2.页面/性能优化
+(1)引用优化
+*css 放在 head 标签内，js 文件放在 body 标签的最下面
+*css 文件是异步加载的，浏览器在构建 dom 树的同时如果有对应的样式就直接显示出来，这样会让样式更早的出现
+*js 文件在下载时会阻塞 dom 树构建，只有 js 下载完成后才回继续构建下面的 dom 树，将 js 文件的引用放在最下面可在视觉上
+减少白屏的出现
+(2)将 js 动画替换成 css 动画</p> <h2 id="js-继承"><a href="#js-继承" class="header-anchor">#</a> js 继承</h2> <div class="language- extra-class"><pre><code>1.原型链继承:直接让子类的prototype属性指向父类的实例,这样在子类的原型上拥有了父类的私有和公有属性.
+2.借用构造函数(经典继承):在子类的构造函数中使用父类.call(this)方法,在构造新的子类实例的时候其实也执行了父类的初始化代码,并且改变了this指向,这样子类就可以使用父类的私有属性了
+3.原型式继承Object.create():create函数内部创建了一个临时的中间类,让这个类的原型等于传进来的原型对象,最后返回了这个中间类的实例,让子类的prototype属性等于返回的实例,这样就拿到了父类的公有方法.
+</code></pre></div><h2 id="水平垂直居中"><a href="#水平垂直居中" class="header-anchor">#</a> 水平垂直居中</h2> <div class="language- extra-class"><pre><code>1、定位 盒子宽高已知， position: absolute; left: 50%; top: 50%; margin-left:-自身一半宽度; margin-top: -自身一半高度;
+
+2、table-cell布局 父级 display: table-cell; vertical-align: middle;  子级 margin: 0 auto;
+
+3、定位 + transform ; 适用于 子盒子 宽高不定时；
+
+    position: relative / absolute;
+    /*top和left偏移各为50%*/
+       top: 50%;
+       left: 50%;
+    /*translate(-50%,-50%) 偏移自身的宽和高的-50%*/
+    transform: translate(-50%, -50%);
+
+4、flex 布局
+    父级：
+        /*flex 布局*/
+        display: flex;
+        /*实现垂直居中*/
+        align-items: center;
+        /*实现水平居中*/
+        justify-content: center;
+</code></pre></div><h2 id="跨域解决方案"><a href="#跨域解决方案" class="header-anchor">#</a> 跨域解决方案</h2> <div class="language- extra-class"><pre><code>1.jsonp 动态创建script标签，请求一个带参网址并指定回调函数
+缺点：只能实现get一种请求。
+	原生实现：
+		&lt;script&gt;
+			var script = doucment.createElement('script');
+			script.src=&quot;http://www.asdf.com/?callback=abackfunction&quot;;
+			function abackfunction(data){
+				数据处理；
+			}
+                            document.getElementsByTagName('head')[0].appendChild(script);
+		&lt;/script&gt;
+发起端定义jsonp的回调处理。
+发起端做jsonp跨域请求
+响应端使用发起端的同名函数处理跨域请求
+
+2.CORS
+浏览器对跨域请求区分为“简单请求”与“非简单请求”
+“简单请求”满足以下特征：
+（1) 请求方法是以下三种方法之一：
+	     HEAD
+	     GET
+	     POST
+（2）HTTP的头信息不超出以下几种字段：
+	     Accept
+	     Accept-Language
+	     Content-Language
+	     Last-Event-ID
+	     Content-Type： application/x-www-form-urlencoded、 multipart/form-data、text/plain
+
+简单请求 只需要CORS服务端在接受到携带Origin字段的跨域请求后，在response header中添加Access-Control-Allow-Origin等字段给浏览器做同源判断。
+非简单请求 需要CORS服务端对OPTIONS类型的请求做处理，其他与简单请求一致
+
+3.nginx代理跨域
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2021/12/30</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#跨域" class="sidebar-link reco-side-跨域" data-v-cb1513f6>跨域</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#闭包" class="sidebar-link reco-side-闭包" data-v-cb1513f6>闭包</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#ssl-工作原理" class="sidebar-link reco-side-ssl-工作原理" data-v-cb1513f6>SSL 工作原理</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#ssl-加密类型" class="sidebar-link reco-side-ssl-加密类型" data-v-cb1513f6>SSL 加密类型</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#html5-有哪些新特性、移除了那些元素" class="sidebar-link reco-side-html5-有哪些新特性、移除了那些元素" data-v-cb1513f6>html5 有哪些新特性、移除了那些元素</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#前端页面优化" class="sidebar-link reco-side-前端页面优化" data-v-cb1513f6>前端页面优化</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#js-继承" class="sidebar-link reco-side-js-继承" data-v-cb1513f6>js 继承</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#水平垂直居中" class="sidebar-link reco-side-水平垂直居中" data-v-cb1513f6>水平垂直居中</a></li><li class="level-2" data-v-cb1513f6><a href="/younglinaBlog/write/docs/some-tips.html#跨域解决方案" class="sidebar-link reco-side-跨域解决方案" data-v-cb1513f6>跨域解决方案</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Younglina
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/younglinaBlog/assets/js/app.a8b0f7f1.js" defer></script><script src="/younglinaBlog/assets/js/3.2edc7f5c.js" defer></script><script src="/younglinaBlog/assets/js/1.0e25b129.js" defer></script><script src="/younglinaBlog/assets/js/55.8dae728e.js" defer></script>
+  </body>
+</html>
