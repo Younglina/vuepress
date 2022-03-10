@@ -131,6 +131,18 @@ module.exports = {
       {
         hostname: 'https://younglina.top'
       },
+    ],
+    ['seo',
+      {
+        siteTitle: (_, $site) => 'Younglina blog',
+        title: $page => $page.title,
+        description: $page => $page.frontmatter.description,
+        author: (_, $site) => 'Younglina',
+        type: $page => 'article',
+        url: (_, $site, path) => 'https://younglina.top' + path,
+        publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+        modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+      }
     ]
     // ["vuepress-plugin-nuggets-style-copy", {
     //     copyText: "复制代码",
