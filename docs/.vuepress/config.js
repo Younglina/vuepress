@@ -4,7 +4,7 @@ module.exports = {
   title: "Younglina", //页面加载中显示的标题
   description: "Younglina要加油！冲冲冲！", //页面加载中显示的描述
   // dest: "docs/public",
-  base: "/younglinaBlog/", //根路径 https://younglina.github.io/younglinaBlog/
+  // base: "/younglinaBlog/", //根路径 https://younglina.github.io/younglinaBlog/
   author: "Younglina", //全局显示作者
   locales: {
     "/": {

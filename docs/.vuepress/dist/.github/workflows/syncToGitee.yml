@@ -13,9 +13,9 @@ jobs:
         src: github/Younglina
         dst: gitee/Younglina
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-        dst_token: ${{ secrets.GITEE_TOKEN }}
+        dst_token: ${{ secrets.TOKEN }}
         account_type: user
-        static_list: "younglinaBlog"
+        static_list: "Younglina.github.io"
         force_update: true
         debug: true
 
