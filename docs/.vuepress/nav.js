@@ -174,9 +174,14 @@ module.exports = [
             {
                 text: "101.对称二叉树",
                 link: "/write/algorithms/leetCode101",
-            }, {
+            }, 
+            {
                 text: "112.路径总和",
                 link: "/write/algorithms/leetCode112",
+            }, 
+            {
+                text: "90.子集 II",
+                link: "/write/algorithms/leetCode90",
             }
         ],
     },

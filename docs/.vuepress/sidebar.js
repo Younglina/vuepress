@@ -250,6 +250,11 @@ module.exports = {
                 title: "112.路径总和",
                 path: "leetCode112",
             },
+            {
+                text: "90.子集 II",
+                title: "90.子集 II",
+                path: "leetCode90",
+            },
         ],
     }
     ],
