@@ -47,7 +47,7 @@ module.exports = {
   head: [
     ['meta', { name: 'keywords', content: 'Younglina,younglina,算法,vuepress,博客' }],
     ['meta', { name: 'author', content: 'Younglina' }],
-    ['meta', { name: 'baidu-site-verification', content: 'code-xdTT2SiFmc' }],
+    ['meta', { name: 'baidu-site-verification', content: 'code-qO24creHLS' }],
     [
       'link',
       { rel: 'icon', herf: '"/younglinaBlog/favicon.ico' }
@@ -57,13 +57,30 @@ module.exports = {
       "script",
       {},
       `
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?11dbf2ebf496bab00f7e2c4d37cb33f1";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?353277c226a3c149b9619fba591d66ea";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+      `
+    ],
+    [
+      "script",
+      {},
+      `
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2866f59a01d41a3c6b024f3152e7403e";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
       `
     ],
     [
@@ -112,7 +129,7 @@ module.exports = {
     [
       'sitemap',
       {
-        hostname: 'https://younglina.gitee.io/younglinablog/'
+        hostname: 'https://younglina.top'
       },
     ]
     // ["vuepress-plugin-nuggets-style-copy", {
