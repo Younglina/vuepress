@@ -18,7 +18,7 @@ module.exports = {
   themeConfig: {
     type: "blog",
     sidebarDepth: 2, //
-    lastUpdated: '上次更新', 
+    lastUpdated: '上次更新',
     author: 'Younglina',
     showAccessNumber: true,
     subSidebar: "auto",
@@ -45,8 +45,9 @@ module.exports = {
     }
   },
   head: [
-    ['meta',{name:'keywords',content:'Younglina,younglina,算法,vuepress,博客'}],
-    ['meta',{name:'author',content:'Younglina'}],
+    ['meta', { name: 'keywords', content: 'Younglina,younglina,算法,vuepress,博客' }],
+    ['meta', { name: 'author', content: 'Younglina' }],
+    ['meta', { name: 'baidu-site-verification', content: 'code-xdTT2SiFmc' }],
     [
       'link',
       { rel: 'icon', herf: '"/younglinaBlog/favicon.ico' }
@@ -100,6 +101,20 @@ module.exports = {
         'copiedButtonText': '已复制！'
       }
     ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp) => {
+          return new Date(timestamp).toLocaleDateString();
+        }
+      }
+    ],
+    [
+      'sitemap',
+      {
+        hostname: 'https://younglina.gitee.io/younglinablog/'
+      },
+    ]
     // ["vuepress-plugin-nuggets-style-copy", {
     //     copyText: "复制代码",
     //     tip: {
