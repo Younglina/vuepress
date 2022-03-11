@@ -25,6 +25,11 @@ module.exports = {
                     title: "vuepress本地复制代码插件",
                     path: "vuepressPlugin",
                 },
+                {
+                    text: "vuepress配置github pages域名访问",
+                    title: "vuepress配置github pages域名访问",
+                    path: "githubPages",
+                },
             ],
         },
     ],

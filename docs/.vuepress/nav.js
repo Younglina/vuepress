@@ -7,6 +7,7 @@ module.exports = [
             { text: "搭建vuepress", link: "/write/docs/VuepressConfig" },
             { text: "代码规范格式化配置", link: "/write/docs/codeFormat" },
             { text: "vuepress本地复制代码插件", link: "/write/docs/vuepressPlugin" },
+            { text: "vuepress配置github pages域名访问", link: "/write/docs/githubPages.md" },
         ],
     },
     {
@@ -215,12 +216,4 @@ module.exports = [
             }
         ]
     }
-    // {
-    //   text: "Younglina",
-    //   items: [
-    //     { text: "Github", link: "https://github.com/Younglina" },
-    //     { text: "gitee", icon:'reco-mayun',link: "https://gitee.com/Younglina" },
-    //     { text: "掘金", link: "https://juejin.cn/user/817692381290190" },
-    //   ],
-    // },
 ]

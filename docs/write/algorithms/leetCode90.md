@@ -7,8 +7,8 @@ categories:
  - 算法
 tags:
  - 刷题
- - 双指针
- - 简单
+ - 回溯
+ - 中等
 --- 
 ## 题目描述
 [90.子集 II](https://leetcode-cn.com/problems/subsets-ii/)  
