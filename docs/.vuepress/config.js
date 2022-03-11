@@ -57,7 +57,6 @@ module.exports = {
       "script",
       {},
       `
-      <script>
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
@@ -65,14 +64,12 @@ module.exports = {
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
-        </script>
       `
     ],
     [
       "script",
       {},
       `
-      <script>
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
@@ -80,7 +77,6 @@ module.exports = {
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
-      </script>
       `
     ],
     [
@@ -102,13 +98,20 @@ module.exports = {
     ],
     [
       "@vssue/vuepress-plugin-vssue",
+      // {
+      //   platform: 'gitee',
+      //   owner: 'Younglina',
+      //   repo: 'younglinaBlog',
+      //   clientId: '4e3bcb1906a476b9e1abe40c953309688c7ca38153f8e3d089b29de001b6df36',
+      //   clientSecret: '818fcfd021439c0210fa4bc9dd547ce0944ca87180634d675a77a525814ea77a',
+      //   autoCreateIssue: true,
+      // }
       {
-        platform: 'gitee',
+        platform: 'github',
         owner: 'Younglina',
-        repo: 'younglinaBlog',
-        clientId: '4e3bcb1906a476b9e1abe40c953309688c7ca38153f8e3d089b29de001b6df36',
-        clientSecret: '818fcfd021439c0210fa4bc9dd547ce0944ca87180634d675a77a525814ea77a',
-        autoCreateIssue: true,
+        repo: 'Younglina.github.io',
+        clientId: '7ad0b21b88ae8df563f8',
+        clientSecret: 'e054aab802897df619b7043c5dca483179bbda61',
       }
     ],
     [

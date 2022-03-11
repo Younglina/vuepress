@@ -8,7 +8,7 @@ categories:
 tags:
  - 刷题
  - 双指针
- - 中等
+ - 简单
 ---
 ## 题目描述
 [27.移除元素](https://leetcode-cn.com/problems/remove-element/)  

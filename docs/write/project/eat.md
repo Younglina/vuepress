@@ -1,3 +1,8 @@
+---
+author: Younglina
+date: '2022-03-01'
+---
+
 <template>
     <div class="eats-contain">
         <input v-model="eats" placeholder="输入想吃的，空格隔开" class="eat-input"/>
@@ -60,7 +65,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
     .eats-contain{
         display: flex;
     }
@@ -117,9 +122,6 @@ export default {
     .eats-res{
         padding: 0 20px;
         color: red;
-    }
-    .page-nav,.page-title{
-        display: none
     }
     .eats-grid{
         display: grid;

@@ -9,6 +9,7 @@
     "deploy": "sh deploy.sh"
   },
   "devDependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
     "vuepress": "^1.9.1",
     "vuepress-plugin-seo": "0.1.4",
     "vuepress-plugin-sitemap": "^2.3.1"
