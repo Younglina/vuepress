@@ -34,8 +34,9 @@ tags:
 :::
 
 ## 思路
-还没理清 回头再补
-
+回溯的基本解法，新建`res`存储符合条件的结果，`path`存储递归过程中的数据  
+定义递归函数参数`idx`,遍历开始的下标，看题目是否运行当前数据重复，允许则递归时传入当前下标`i`，不允许则传入`i+1`
+往`path`push数据以后，递归，`path`pop进行回溯
 ## 题解
 ```javascript
 var subsetsWithDup = function(nums) {
