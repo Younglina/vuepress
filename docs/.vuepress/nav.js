@@ -183,6 +183,10 @@ module.exports = [
             {
                 text: "90.子集 II",
                 link: "/write/algorithms/leetCode90",
+            }, 
+            {
+                text: "704.二分查找",
+                link: "/write/algorithms/leetCode704",
             }
         ],
     },
