@@ -259,12 +259,17 @@ module.exports = {
                 text: "90.子集 II",
                 title: "90.子集 II",
                 path: "leetCode90",
-            },,
+            },
             {
                 text: "704.二分查找",
                 title: "704.二分查找",
                 path: "leetCode704",
-            }
+            },
+            {
+                text: "33.搜索旋转排序数组",
+                title: "33.搜索旋转排序数组",
+                path: "leetCode33",
+            },
         ],
     }
     ],
