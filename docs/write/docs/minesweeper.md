@@ -8,6 +8,8 @@ tags:
  - 记录
 ---
 
+## vscode配置和插件
+[GitHub](https://github.com/antfu/vscode-settings)
 ## degit
 `degit`类似于`git clone`，当你运行`degit User/repo`时，它会在`https://github.com/User/repo`上`clone`最新的提交，
 与`git clone`不同的地方在于，它不会下载整个`repo`的历史记录，所以会比`git clone`快很多
@@ -68,3 +70,4 @@ alias b="nr build"
 d //就是运行如 npm run dev
 s //就是运行如 npm run start
 ```
+
