@@ -11,7 +11,7 @@ tags:
 给你一棵二叉树的根节点 `root` ，返回其节点值的 前中后序遍历  
 
 ## 迭代
-![](https://gitee.com/Younglina/imags/raw/master/preorder.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/preorder.png)  
 ### [144.二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 前序遍历是：根左右  
 1. 先取值，节点入栈
@@ -60,7 +60,7 @@ var preorder = function(root){
   return res
 }
 ```
-![](https://gitee.com/Younglina/imags/raw/master/inorder.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/inorder.png)  
 
 ### [94.二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 ```javascript
@@ -78,7 +78,7 @@ var inorder = function(root){
   return res
 }
 ```
-![](https://gitee.com/Younglina/imags/raw/master/postorder.png)
+![](https://raw.githubusercontent.com/Younglina/images/master/postorder.png)
 
 ### [145.二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
 后序遍历和前序遍历代码基本差不多，只不过后续先遍历右节点，然后`unshift`值

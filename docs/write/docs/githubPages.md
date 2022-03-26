@@ -18,21 +18,21 @@ github新建一个名为 `你的用户名.github.io` 的仓库
 ### 选择域名
 在[万网](https://wanwang.aliyun.com/)上选择你需要的域名,需要实名认证,购买完成并审核通过后
 
-![](https://gitee.com/Younglina/imags/raw/master/wanwang.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/wanwang.png)  
 
 ### 域名解析
 1. 先获取刚刚创建的仓库所对应的ip地址，`ping 你的用户名.github.io`  
-![](https://gitee.com/Younglina/imags/raw/master/pingGit.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/pingGit.png)  
 
 2. 添加解析，[域名列表](https://dc.console.aliyun.com/next/index#/domain-list/all)设置解析
-![](https://gitee.com/Younglina/imags/raw/master/cnameList.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/cnameList.png)  
 
 1. 添加记录，一个记录类型为`CNAME`的，记录值就是仓库名，一个记录类型为默认的，记录值为刚刚ping出来的ip
-![](https://gitee.com/Younglina/imags/raw/master/cnameDns.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/cnameDns.png)  
 
 ### 设置域名
 选择gh-pages分支，输入你的域名
-![](https://gitee.com/Younglina/imags/raw/master/setCname.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/setCname.png)  
 
 ## 域名被清空
 在每次提交gh-pages分支后，设置的域名都会被清空，需要在gh-pages分支提交的时候新增一个名为`CNAME`的文件，

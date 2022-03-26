@@ -216,6 +216,10 @@ module.exports = [
             {
                 text: "树的前中后序遍历",
                 link: "/write/algorithms-temp/traverse-tree",
+            },
+            {
+                text: "蓝红二分模板",
+                link: "/write/algorithms-temp/bluered",
             }
         ]
     },

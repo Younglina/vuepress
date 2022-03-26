@@ -13,10 +13,10 @@ tags:
 ## ubuntu
 
 在win10的`Microsoft Store`中，搜索`ubuntu`，并安装
-![](https://gitee.com/Younglina/imags/raw/master/ubuntu.png)
+![](https://raw.githubusercontent.com/Younglina/images/master/ubuntu.png)
 
 同样再搜索`windows terminal`，并安装
-![](https://gitee.com/Younglina/imags/raw/master/wint.png)
+![](https://raw.githubusercontent.com/Younglina/images/master/wint.png)
 
 ## zsh git
 进入刚刚下载的`windows terminal`，输入`wsl`进入wsl的ubuntu环境  
@@ -24,7 +24,7 @@ tags:
 ```
 sudo apt install zsh git
 ```
-![](https://gitee.com/Younglina/imags/raw/master/zsh.png)
+![](https://raw.githubusercontent.com/Younglina/images/master/zsh.png)
 
 ## oh my zsh
 用`git`把`oh my zsh`的源码拷下来
@@ -81,9 +81,9 @@ gm // git merge
 
 ### 结合vscode
 直接在新建终端的时候，选择默认配置文件，就是上面安装的`ubuntu`  
-![](https://gitee.com/Younglina/imags/raw/master/vscode.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/vscode.png)  
 最终在vscode的效果就是这样  
-![](https://gitee.com/Younglina/imags/raw/master/ohmyzsh.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/ohmyzsh.png)  
 
 
 ## 懒人小技巧
@@ -132,5 +132,5 @@ alias b="nr build"
 alias d="npm run dev"
 ```
 然后就可以直接在控制台中，输入配置的别名，如`d`，就会运行`nr dev`  
-![](https://gitee.com/Younglina/imags/raw/master/nid.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/nid.png)  
 所以之后就可以配置很多常用的命令别名，来提高开发效率  

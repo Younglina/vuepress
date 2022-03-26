@@ -24,4 +24,4 @@ while(l+1!=r){
 }
 return l or r
 ```
-![](https://gitee.com/Younglina/imags/raw/master/redblue.png)
+![](https://raw.githubusercontent.com/Younglina/images/master/redblue.png)
