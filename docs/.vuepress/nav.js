@@ -191,6 +191,10 @@ module.exports = [
             {
                 text: "33.搜索旋转排序数组",
                 link: "/write/algorithms/leetCode33",
+            },
+            {
+                text: "278.第一个错误的版本",
+                link: "/write/algorithms/leetCode278",
             }
         ],
     },

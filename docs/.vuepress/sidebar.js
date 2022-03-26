@@ -270,6 +270,11 @@ module.exports = {
                 title: "33.搜索旋转排序数组",
                 path: "leetCode33",
             },
+            {
+                text: "278.第一个错误的版本",
+                title: "278.第一个错误的版本",
+                path: "leetCode278",
+            }
         ],
     }
     ],
@@ -296,6 +301,11 @@ module.exports = {
                 text: "树的前中后序遍历",
                 title: "树的前中后序遍历",
                 path: "traverse-tree",
+            },
+            {
+                text: "蓝红二分模板",
+                title: "蓝红二分模板",
+                path: "bluered",
             }
         ]
     },
