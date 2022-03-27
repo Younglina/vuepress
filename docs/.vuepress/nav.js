@@ -195,6 +195,10 @@ module.exports = [
             {
                 text: "278.第一个错误的版本",
                 link: "/write/algorithms/leetCode278",
+            },
+            {
+                text: "剑指 Offer 53 - II.0～n-1中缺失的数字",
+                link: "/write/algorithms/leetCode_o53",
             }
         ],
     },

@@ -274,6 +274,11 @@ module.exports = {
                 text: "278.第一个错误的版本",
                 title: "278.第一个错误的版本",
                 path: "leetCode278",
+            },
+            {
+                text: "剑指 Offer 53 - II.0～n-1中缺失的数字",
+                title: "剑指 Offer 53 - II.0～n-1中缺失的数字",
+                path: "leetCode_o53",
             }
         ],
     }
