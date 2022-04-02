@@ -216,7 +216,7 @@ module.exports = [
         items: [
             {
                 text: "3.2 渲染器",
-                link: "/write/vueBook/render",
+                link: "/write/book/render",
             }
         ]
     }

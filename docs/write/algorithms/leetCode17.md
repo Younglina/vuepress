@@ -50,7 +50,7 @@ digits[i] 是范围 ['2', '9'] 的一个数字。
 var letterCombinations = function(digits) {
     if(!digits) return []
 
-    let res = [],path=[],len = digi·ts.length,
+    let res = [],path=[],len = digits.length,
     charts = ['','','abc','def','ghi','jkl','mno','pqrs','tuv','wxyz']
     
     const backLoop = (idx) => {
