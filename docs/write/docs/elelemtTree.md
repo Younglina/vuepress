@@ -63,7 +63,7 @@ tags:
 ## 设置被拖拽节点样式
 项目需求是要求我，拖拽时，高亮显示被拖拽的节点，即加背景色、文字色等。  
 我的做法是，通过监听拖拽开始和拖拽结束的事件，设置当前被拖拽的节点id, 控制节点的样式  
-![](https://gitee.com/Younglina/imags/raw/master/dragNode.png)
+![](https://raw.githubusercontent.com/Younglina/images/master/dragNode.png)
 ```html
 <el-tree
   ...
@@ -97,9 +97,9 @@ tags:
 
 ## 拖拽时的光标异常
 在节点数据过多，有滚动条的情况时，会出现下面这种情况
-![](https://gitee.com/Younglina/imags/raw/master/dragLine.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/dragLine.png)  
 在查看[源码](https://github.com/ElemeFE/element/blob/dev/packages/tree/src/tree.vue#L413)后发现，光标定位的高度并未加上滚动的高度
-![](https://gitee.com/Younglina/imags/raw/master/elTree.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/elTree.png)  
 修改后
-![](https://gitee.com/Younglina/imags/raw/master/elTreeC.png)  
-![](https://gitee.com/Younglina/imags/raw/master/dragLineC.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/elTreeC.png)  
+![](https://raw.githubusercontent.com/Younglina/images/master/dragLineC.png)  

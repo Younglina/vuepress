@@ -18,7 +18,7 @@ tags:
 请你返回字符串的能量。
 
 ### 示例 1：
-![](https://gitee.com/Younglina/imags/raw/master/112.jpeg)
+![](https://raw.githubusercontent.com/Younglina/images/master/112.jpeg)
 ```
 输入：root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22  
 输出：true  

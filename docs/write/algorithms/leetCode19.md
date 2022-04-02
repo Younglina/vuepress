@@ -18,7 +18,7 @@ tags:
 
 ### 示例 1：
 
-![](https://gitee.com/Younglina/imags/raw/master/leetcode19.jpeg)
+![](https://raw.githubusercontent.com/Younglina/images/master/leetcode19.jpeg)
 
 ```
 输入：head = [1,2,3,4,5], n = 2

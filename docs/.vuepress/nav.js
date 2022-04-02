@@ -175,18 +175,30 @@ module.exports = [
             {
                 text: "101.对称二叉树",
                 link: "/write/algorithms/leetCode101",
-            }, 
+            },
             {
                 text: "112.路径总和",
                 link: "/write/algorithms/leetCode112",
-            }, 
+            },
             {
                 text: "90.子集 II",
                 link: "/write/algorithms/leetCode90",
-            }, 
+            },
             {
                 text: "704.二分查找",
                 link: "/write/algorithms/leetCode704",
+            },
+            {
+                text: "33.搜索旋转排序数组",
+                link: "/write/algorithms/leetCode33",
+            },
+            {
+                text: "278.第一个错误的版本",
+                link: "/write/algorithms/leetCode278",
+            },
+            {
+                text: "剑指 Offer 53 - II.0～n-1中缺失的数字",
+                link: "/write/algorithms/leetCode_o53",
             }
         ],
     },
@@ -208,6 +220,10 @@ module.exports = [
             {
                 text: "树的前中后序遍历",
                 link: "/write/algorithms-temp/traverse-tree",
+            },
+            {
+                text: "蓝红二分模板",
+                link: "/write/algorithms-temp/bluered",
             }
         ]
     },
