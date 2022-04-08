@@ -87,7 +87,7 @@ tags:
       |  |  
 1->3->2->4  
 
-## 题解2
+## 题解3
 ```javascript
  var findDuplicate = function(nums) {
     let l =0,r=nums.length-1

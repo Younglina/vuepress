@@ -30,6 +30,11 @@ module.exports = {
                     title: "vuepress配置github pages域名访问",
                     path: "githubPages",
                 },
+                {
+                    text: "动态规划：为什么是dp[n-2]+dp[n-1]",
+                    title: "动态规划：为什么是dp[n-2]+dp[n-1]",
+                    path: "dp-step",
+                },
             ],
         },
     ],
