@@ -56,7 +56,7 @@ var fib = function(n) {
 
 ### 为何是(n-1) + (n-2)
 
-![爬楼梯.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1618cea63b084b9e85f7b492a024629f~tplv-k3u1fbpfcp-watermark.image?)
+![爬楼梯.png](https://raw.githubusercontent.com/Younglina/images/master/dp-step.png)
 
 ### 题解
 动态规划
