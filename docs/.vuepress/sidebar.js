@@ -319,15 +319,15 @@ module.exports = {
             }
         ]
     },
-    'write/book/':
-    {
-        text: "Vue设计与实现读书记录",
-        children: [
-            {
-                text: "3.2 渲染器",
-                title: "3.2 渲染器",
-                path: "/write/book/render",
-            }
-        ]
-    }
+    // 'write/book/':
+    // {
+    //     text: "Vue设计与实现读书记录",
+    //     children: [
+    //         {
+    //             text: "3.2 渲染器",
+    //             title: "3.2 渲染器",
+    //             path: "/write/book/render",
+    //         }
+    //     ]
+    // }
 }

@@ -228,13 +228,13 @@ module.exports = [
             }
         ]
     },
-    {
-        text: "Vue设计与实现读书记录",
-        items: [
-            {
-                text: "3.2 渲染器",
-                link: "/write/book/render",
-            }
-        ]
-    }
+    // {
+    //     text: "Vue设计与实现读书记录",
+    //     items: [
+    //         {
+    //             text: "3.2 渲染器",
+    //             link: "/write/book/render",
+    //         }
+    //     ]
+    // }
 ]
