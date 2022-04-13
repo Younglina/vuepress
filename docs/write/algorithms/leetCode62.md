@@ -27,16 +27,6 @@ tags:
 |      |      |      |      |      |      |  ✨（Finish）   |
 
 </div>
-<style>
-.path-table tr,.path-table td{
-width: 80px;
-height: 80px;
-text-align: center;
-}
-.path-table tr:nth-child(2n){
-    background-color: unset;
-}
-</style>
 
 ```
 输入：m = 3, n = 7

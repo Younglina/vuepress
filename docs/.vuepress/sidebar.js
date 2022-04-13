@@ -284,6 +284,16 @@ module.exports = {
                 text: "剑指 Offer 53 - II.0～n-1中缺失的数字",
                 title: "剑指 Offer 53 - II.0～n-1中缺失的数字",
                 path: "leetCode_o53",
+            },
+            {
+                text: "62.不同路径",
+                title: "62.不同路径",
+                path: "/write/algorithms/leetCode62",
+            },
+            {
+                text: "63.不同路径II",
+                title: "63.不同路径II",
+                path: "/write/algorithms/leetCode63",
             }
         ],
     }

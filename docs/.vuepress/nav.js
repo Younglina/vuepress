@@ -200,6 +200,14 @@ module.exports = [
             {
                 text: "剑指 Offer 53 - II.0～n-1中缺失的数字",
                 link: "/write/algorithms/leetCode_o53",
+            },
+            {
+                text: "62.不同路径",
+                link: "/write/algorithms/leetCode62",
+            },
+            {
+                text: "63.不同路径II",
+                link: "/write/algorithms/leetCode63",
             }
         ],
     },
