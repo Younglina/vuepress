@@ -208,6 +208,14 @@ module.exports = [
             {
                 text: "63.不同路径II",
                 link: "/write/algorithms/leetCode63",
+            },
+            {
+                text: "343.整数拆分",
+                link: "/write/algorithms/leetCode343",
+            },
+            {
+                text: "96.不同的二叉搜索树",
+                link: "/write/algorithms/leetCode96",
             }
         ],
     },
