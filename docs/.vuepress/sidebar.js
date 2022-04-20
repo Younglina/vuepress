@@ -296,6 +296,11 @@ module.exports = {
                 path: "leetCode63",
             },
             {
+                text: "64.最小路径和",
+                title: "63.最小路径和",
+                path: "leetCode64",
+            },
+            {
                 text: "343.整数拆分",
                 title: "343.整数拆分",
                 path: "leetCode343",

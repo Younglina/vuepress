@@ -210,6 +210,10 @@ module.exports = [
                 link: "/write/algorithms/leetCode63",
             },
             {
+                text: "64.最小路径和",
+                link: "/write/algorithms/leetCode64",
+            },
+            {
                 text: "343.整数拆分",
                 link: "/write/algorithms/leetCode343",
             },
