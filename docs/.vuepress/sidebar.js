@@ -309,6 +309,11 @@ module.exports = {
                 text: "96.不同的二叉搜索树",
                 title: "96.不同的二叉搜索树",
                 path: "leetCode96",
+            },
+            {
+                text: "396.旋转函数",
+                title: "396.旋转函数",
+                link: "leetCode396",
             }
         ],
     }

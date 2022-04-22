@@ -220,6 +220,10 @@ module.exports = [
             {
                 text: "96.不同的二叉搜索树",
                 link: "/write/algorithms/leetCode96",
+            },
+            {
+                text: "396.旋转函数",
+                link: "/write/algorithms/leetCode396",
             }
         ],
     },
