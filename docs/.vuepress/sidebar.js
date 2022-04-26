@@ -314,6 +314,11 @@ module.exports = {
                 text: "396.旋转函数",
                 title: "396.旋转函数",
                 link: "leetCode396",
+            },
+            {
+                text: "494.目标和",
+                title: "494.目标和",
+                path: "leetCode494",
             }
         ],
     }

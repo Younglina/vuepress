@@ -224,6 +224,10 @@ module.exports = [
             {
                 text: "396.旋转函数",
                 link: "/write/algorithms/leetCode396",
+            },
+            {
+                text: "494.目标和",
+                link: "/write/algorithms/leetCode494",
             }
         ],
     },
