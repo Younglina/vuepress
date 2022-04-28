@@ -351,6 +351,11 @@ module.exports = {
                 text: "蓝红二分模板",
                 title: "蓝红二分模板",
                 path: "bluered",
+            },
+            {
+                text: "377.组合总和Ⅳ",
+                title: "377.组合总和Ⅳ",
+                path: "leetCode377",
             }
         ]
     },

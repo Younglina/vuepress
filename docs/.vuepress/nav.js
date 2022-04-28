@@ -228,6 +228,10 @@ module.exports = [
             {
                 text: "494.目标和",
                 link: "/write/algorithms/leetCode494",
+            },
+            {
+                text: "377.组合总和Ⅳ",
+                link: "/write/algorithms/leetCode377",
             }
         ],
     },
