@@ -18,7 +18,7 @@ tags:
 给你一个整数 `n` ，求恰由 `n` 个节点组成且节点值从 `1` 到 `n` 互不相同的 **二叉搜索树** 有多少种？返回满足题意的二叉搜索树的种数。
 
 ### 示例 1：
-![](https://raw.githubusercontent.com/Younglina/images/master/96-1.jpeg)
+![](https://raw.githubusercontent.com/Younglina/images/master/96-1.png)
 ```
 输入：n = 3  
 输出：5  
@@ -43,10 +43,10 @@ tags:
 `1`为根节点搜索树的数量 = 左子树有0个元素的情况 * 右子树有2个元素的情况  
 所以`dp[3]=dp[2]*dp[0]+dp[1]*dp[1]+dp[0]*dp[2]`  
 
-![](https://raw.githubusercontent.com/Younglina/images/master/96-2.jpeg)
+![](https://raw.githubusercontent.com/Younglina/images/master/96-2.png)
 
 所以当有`n`个数字时  
-![](https://raw.githubusercontent.com/Younglina/images/master/96-3.jpeg)  
+![](https://raw.githubusercontent.com/Younglina/images/master/96-3.png)  
 `dp[n]`有`1到n`个根节点中，有以`i-1`为左子树节点数量 * `n-i`为右子树节点数量的累加和，即  
 `dp[n] += dp[i-1]*dp[n-i]`  
 
