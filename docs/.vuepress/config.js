@@ -122,6 +122,13 @@ module.exports = {
       }
     ],
     [
+      require('./leetcode-heatmap'),
+      {
+        'copybuttonText': '复制',
+        'copiedButtonText': '已复制！'
+      }
+    ],
+    [
       '@vuepress/last-updated',
       {
         transformer: (timestamp) => {
