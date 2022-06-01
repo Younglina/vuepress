@@ -73,7 +73,7 @@ import {
   SQUARE_SIZE,
 } from './consts';
 
-VTooltip.enabled = window.innerWidth > 768;
+// VTooltip.enabled = window.innerWidth > 768;
 
 export default {
   directives: {
