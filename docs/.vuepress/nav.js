@@ -232,6 +232,10 @@ module.exports = [
             {
                 text: "377.组合总和Ⅳ",
                 link: "/write/algorithms/leetCode377",
+            },
+            {
+                text: "1663.具有给定数值的最小字符串",
+                link: "/write/algorithms/leetCode1663",
             }
         ],
     },
