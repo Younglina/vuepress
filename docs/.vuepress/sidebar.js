@@ -356,6 +356,11 @@ module.exports = {
                 text: "377.组合总和Ⅳ",
                 title: "377.组合总和Ⅳ",
                 path: "leetCode377",
+            },
+            {
+                text: "875.爱吃香蕉的珂珂",
+                title: "875.爱吃香蕉的珂珂",
+                path: "leetCode875",
             }
         ]
     },

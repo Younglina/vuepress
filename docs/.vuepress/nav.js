@@ -232,6 +232,10 @@ module.exports = [
             {
                 text: "377.组合总和Ⅳ",
                 link: "/write/algorithms/leetCode377",
+            },
+            {
+                text: "875.爱吃香蕉的珂珂",
+                link: "/write/algorithms/leetCode875",
             }
         ],
     },
