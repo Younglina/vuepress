@@ -9,6 +9,7 @@ module.exports = [
             { text: "vuepress本地复制代码插件", link: "/write/docs/vuepressPlugin" },
             { text: "vuepress配置github pages域名访问", link: "/write/docs/githubPages.md" },
             { text: "动态规划：为什么是dp[n-2]+dp[n-1]", link: "/write/docs/dp-step.md", },
+            { text: "学习vue3-nuxt", link: "/write/docs/vue3-nuxt.md", },
         ],
     },
     {
