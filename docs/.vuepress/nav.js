@@ -236,6 +236,10 @@ module.exports = [
             {
                 text: "1663.具有给定数值的最小字符串",
                 link: "/write/algorithms/leetCode1663",
+            },
+            {
+                text: "875.爱吃香蕉的珂珂",
+                link: "/write/algorithms/leetCode875",
             }
         ],
     },
