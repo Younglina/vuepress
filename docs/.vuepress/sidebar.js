@@ -35,6 +35,11 @@ module.exports = {
                     title: "动态规划：为什么是dp[n-2]+dp[n-1]",
                     path: "dp-step",
                 },
+                {
+                    text: "学习vue3-nuxt",
+                    title: "学习vue3-nuxt",
+                    path: "vue3-nuxt",
+                },
             ],
         },
     ],
