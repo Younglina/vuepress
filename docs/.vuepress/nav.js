@@ -236,6 +236,10 @@ module.exports = [
             {
                 text: "875.爱吃香蕉的珂珂",
                 link: "/write/algorithms/leetCode875",
+            },
+            {
+                text: "697.数组的度",
+                link: "/write/algorithms/leetCode697",
             }
         ],
     },

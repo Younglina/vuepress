@@ -361,6 +361,11 @@ module.exports = {
                 text: "875.爱吃香蕉的珂珂",
                 title: "875.爱吃香蕉的珂珂",
                 path: "leetCode875",
+            },
+            {
+                text: "697.数组的度",
+                title: "697.数组的度",
+                path: "leetCode697",
             }
         ]
     },
