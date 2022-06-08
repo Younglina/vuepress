@@ -35,6 +35,11 @@ module.exports = {
                     title: "动态规划：为什么是dp[n-2]+dp[n-1]",
                     path: "dp-step",
                 },
+                {
+                    text: "学习vue3-nuxt",
+                    title: "学习vue3-nuxt",
+                    path: "vue3-nuxt",
+                },
             ],
         },
     ],
@@ -319,6 +324,16 @@ module.exports = {
                 text: "494.目标和",
                 title: "494.目标和",
                 path: "leetCode494",
+            },
+            {
+                text: "377.组合总和Ⅳ",
+                title: "377.组合总和Ⅳ",
+                path: "leetCode377",
+            },
+            {
+                text: "1663.具有给定数值的最小字符串",
+                title: "1663.具有给定数值的最小字符串",
+                path: "leetCode1663",
             }
         ],
     }
