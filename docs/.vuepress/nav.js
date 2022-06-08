@@ -245,6 +245,10 @@ module.exports = [
             {
                 text: "697.数组的度",
                 link: "/write/algorithms/leetCode697",
+            },
+            {
+                text: "41.缺失的第一个正数",
+                link: "/write/algorithms/leetCode41",
             }
         ],
     },
