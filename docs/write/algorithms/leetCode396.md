@@ -1,7 +1,7 @@
 ---
 title: 396.旋转函数
 author: Younglina
-date: '2022-04-22'
+date: '2022-06-09'
 showAccessNumber: true
 categories:
  - 算法
@@ -48,14 +48,14 @@ n == nums.length
 :::
 
 ## 动态规划思路
-由题意得：设`dp[i]`为旋转`i`个位置后的`i*nums[i]`数组和,`sum`为原数组总和,`len`为数组长度
+由题意得：设`dp[i]`为旋转`i`个位置后的`i*nums[i]`数组和,`sum`为原数组总和,`len`为数组长度  
 `dp[0]` = `0*nums[0]+1*nums[1]+2*nums[2]+3*nums[3]+···+n*nums[n]`
 `dp[1]` = `0*nums[1]+1*nums[2]+2*nums[3]+···+(n-1)*nums[n]+n*nums[0]`
 `dp[0]-dp[1]` = `nums[1]+nums[2]+nums[3]+···+nums[n]-n*nums[0]`
 
-可以看出`num[1]+nums[2]+···+nums[n]`就是`sum-nums[0]`
-
-所以`dp[1]`=`dp[0]-sum+nums[0]+n*nums[0]`=`dp[0]-sum+len*nums[0]`
+可以看出`num[1]+nums[2]+···+nums[n]`就是`sum-nums[0]`  
+`dp[0]-dp[1] = sum-nums[0]-n*nums[0]`,n从0开始，n+1=len  
+所以`dp[1]`=`dp[0]-sum+(n+1)*nums[0]`=`dp[0]-sum+len*nums[0]`
 
 推出状态转移方程为：`dp[i]=dp[i-1]-sum+len*num[i-1]`
 
