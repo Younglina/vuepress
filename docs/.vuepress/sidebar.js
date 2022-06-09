@@ -334,6 +334,11 @@ module.exports = {
                 text: "1663.具有给定数值的最小字符串",
                 title: "1663.具有给定数值的最小字符串",
                 path: "leetCode1663",
+            },
+            {
+                text: "41.缺失的第一个正数",
+                title: "41.缺失的第一个正数",
+                link: "leetCode41",
             }
         ],
     }
