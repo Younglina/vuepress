@@ -249,6 +249,10 @@ module.exports = [
             {
                 text: "41.缺失的第一个正数",
                 link: "/write/algorithms/leetCode41",
+            },
+            {
+                text: "54.螺旋矩阵",
+                link: "/write/algorithms/leetCode54",
             }
         ],
     },

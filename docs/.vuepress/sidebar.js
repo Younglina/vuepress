@@ -339,6 +339,11 @@ module.exports = {
                 text: "41.缺失的第一个正数",
                 title: "41.缺失的第一个正数",
                 link: "leetCode41",
+            },
+            {
+                text: "54.螺旋矩阵",
+                title: "54.螺旋矩阵",
+                link: "leetCode54",
             }
         ],
     }
