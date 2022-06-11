@@ -253,6 +253,10 @@ module.exports = [
             {
                 text: "54.螺旋矩阵",
                 link: "/write/algorithms/leetCode54",
+            },
+            {
+                text: "926.将字符串翻转到单调递增",
+                link: "/write/algorithms/leetCode926",
             }
         ],
     },

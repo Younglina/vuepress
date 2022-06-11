@@ -318,7 +318,7 @@ module.exports = {
             {
                 text: "396.旋转函数",
                 title: "396.旋转函数",
-                link: "leetCode396",
+                path: "leetCode396",
             },
             {
                 text: "494.目标和",
@@ -338,12 +338,17 @@ module.exports = {
             {
                 text: "41.缺失的第一个正数",
                 title: "41.缺失的第一个正数",
-                link: "leetCode41",
+                path: "leetCode41",
             },
             {
                 text: "54.螺旋矩阵",
                 title: "54.螺旋矩阵",
-                link: "leetCode54",
+                path: "leetCode54",
+            },
+            {
+                text: "926.将字符串翻转到单调递增",
+                title: "926.将字符串翻转到单调递增",
+                path: "leetCode926",
             }
         ],
     }
