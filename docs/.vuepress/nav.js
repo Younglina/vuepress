@@ -257,6 +257,10 @@ module.exports = [
             {
                 text: "926.将字符串翻转到单调递增",
                 link: "/write/algorithms/leetCode926",
+            },
+            {
+                text: "890.查找和替换模式",
+                link: "/write/algorithms/leetCode890",
             }
         ],
     },

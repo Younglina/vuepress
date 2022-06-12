@@ -349,6 +349,11 @@ module.exports = {
                 text: "926.将字符串翻转到单调递增",
                 title: "926.将字符串翻转到单调递增",
                 path: "leetCode926",
+            },
+            {
+                text: "890.查找和替换模式",
+                title: "890.查找和替换模式",
+                path: "leetCode890",
             }
         ],
     }
