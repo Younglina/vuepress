@@ -261,6 +261,10 @@ module.exports = [
             {
                 text: "890.查找和替换模式",
                 link: "/write/algorithms/leetCode890",
+            },
+            {
+                text: "696.计数二进制子串",
+                link: "/write/algorithms/leetCode696",
             }
         ],
     },

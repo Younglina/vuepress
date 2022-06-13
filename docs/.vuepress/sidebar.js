@@ -354,6 +354,11 @@ module.exports = {
                 text: "890.查找和替换模式",
                 title: "890.查找和替换模式",
                 path: "leetCode890",
+            },
+            {
+                text: "696.计数二进制子串",
+                title: "696.计数二进制子串",
+                path: "leetCode696",
             }
         ],
     }
