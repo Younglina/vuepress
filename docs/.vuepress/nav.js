@@ -265,6 +265,10 @@ module.exports = [
             {
                 text: "696.计数二进制子串",
                 link: "/write/algorithms/leetCode696",
+            },
+            {
+                text: "538.计数二进制子串",
+                link: "/write/algorithms/leetCod538",
             }
         ],
     },

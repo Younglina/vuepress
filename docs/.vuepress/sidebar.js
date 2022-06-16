@@ -359,6 +359,11 @@ module.exports = {
                 text: "696.计数二进制子串",
                 title: "696.计数二进制子串",
                 path: "leetCode696",
+            },
+            {
+                text: "538.计数二进制子串",
+                title: "538.计数二进制子串",
+                path: "leetCod538",
             }
         ],
     }
