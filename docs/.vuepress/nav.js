@@ -265,6 +265,10 @@ module.exports = [
             {
                 text: "696.计数二进制子串",
                 link: "/write/algorithms/leetCode696",
+            },
+            {
+                text: "739.每日温度",
+                link: "/write/algorithms/leetCode739",
             }
         ],
     },
