@@ -361,6 +361,11 @@ module.exports = {
                 path: "leetCode696",
             },
             {
+                text: "538.计数二进制子串",
+                title: "538.计数二进制子串",
+                path: "leetCod538",
+            },
+            {
                 text: "739.每日温度",
                 title: "739.每日温度",
                 path: "leetCode739",
