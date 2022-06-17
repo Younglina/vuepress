@@ -11,6 +11,6 @@ const options = {
   data: graphqlQuery,
 };
 
-const response = await axios.request(options)
-
-console.log(response)
+axios.request(options).then(res => {
+  console.log(res)
+})
