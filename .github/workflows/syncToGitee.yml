@@ -30,3 +30,41 @@ jobs:
         gitee-repo: Younglina/younglinaBlog
         # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
         branch: gh-pages
+
+name: AC record schedule
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      TZ: Asia/Shanghai # 时区
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+      - run: yarn install
+      - run: |
+          git pull
+          yarn run ac_record
+          git pull
+
+      - name: Update GitHub
+        run: |
+          git config --local user.email "Younglina0409@Outlook.com"
+          git config --local user.name "Younglina"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}
+          git add .
+          git commit -m "update by github action"
+          git push
