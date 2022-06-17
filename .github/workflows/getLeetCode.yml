@@ -20,11 +20,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14
-          cache: 'pnpm'
-      - run: pnpm install
+          cache: 'yarn'
+      - run: yarn install
       - run: |
           git pull
-          npm run ac_record
+          yarn run ac_record
           git pull
 
       - name: Update GitHub
