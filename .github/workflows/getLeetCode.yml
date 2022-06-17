@@ -3,7 +3,7 @@ name: AC record schedule
 on:
   push:
     branches:
-      - master
+      - gh-pages
 
 jobs:
   build:
