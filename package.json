@@ -7,7 +7,7 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "sh deploy.sh",
-    "ac_record": "node lc/getAcRecord.js"
+    "ac_record": "node lc/getAcRecord.mjs"
   },
   "devDependencies": {
     "@vssue/api-github-v3": "^1.4.7",

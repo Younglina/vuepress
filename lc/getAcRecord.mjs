@@ -1,3 +1,7 @@
+import axios from 'axios';
+import * as fs from 'fs';
+import * as path from 'path';
+
 let url = 'https://leetcode.cn/graphql/noj-go/';
 let graphqlQuery = {
   query:
@@ -12,5 +16,17 @@ const options = {
 };
 
 axios.request(options).then(res => {
-  console.log(res)
+  const data = res.data.data;
+  const __dirname = path.resolve()
+  const filePath = path.resolve(
+    __dirname,
+    `docs/.vuepress/leetcode-heatmap/lcData.json`
+  );
+  fs.writeFileSync(
+    filePath,
+    JSON.stringify(data),
+    {
+      encoding: 'utf8',
+    }
+  );
 })
