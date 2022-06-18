@@ -48,7 +48,6 @@ jobs:
           cd docs/.vuepress/dist
           cp -r ../../../.github ./
           cp -r ../../../CNAME ./
-      - run: |
           git init
           git config --local user.email "Younglina0409@Outlook.com"
           git config --local user.name "Younglina"
