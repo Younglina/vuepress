@@ -36,17 +36,6 @@ jobs:
           git commit -m "update by github action"
           git push
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-          cache: 'yarn'
-      - run:  yarn run build
-      - run: |
-          cd docs/.vuepress/dist
-          cp -r ../../../.github ./
-          cp -r ../../../CNAME ./
-
       - name: Update GitHub
         uses: shimataro/ssh-key-action@v2
         with:
@@ -54,6 +43,10 @@ jobs:
           name: id_rsa
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - run: |
+          yarn run build
+          cd docs/.vuepress/dist
+          cp -r ../../../.github ./
+          cp -r ../../../CNAME ./
           git config --local user.email "Younglina0409@Outlook.com"
           git config --local user.name "Younglina"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}
