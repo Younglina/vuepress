@@ -273,6 +273,10 @@ module.exports = [
             {
                 text: "739.每日温度",
                 link: "/write/algorithms/leetCode739",
+            },
+            {
+                text: "222.完全二叉树的节点个数",
+                link: "/write/algorithms/leetCode222",
             }
         ],
     },

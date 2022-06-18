@@ -369,6 +369,11 @@ module.exports = {
                 text: "739.每日温度",
                 title: "739.每日温度",
                 path: "leetCode739",
+            },
+            {
+                text: "222.完全二叉树的节点个数",
+                title: "222.完全二叉树的节点个数",
+                path: "leetCode222",
             }
         ],
     }
