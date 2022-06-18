@@ -3,6 +3,12 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 获取leetcode
+npm run ac_record
+git add .
+git commit -m "get ac record"
+git push
+
 # 生成静态文件
 npm run build
 
