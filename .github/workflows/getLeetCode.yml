@@ -42,11 +42,13 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_rsa
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
-      - run: |
+      - run: 
           yarn run build
+      - run: |
           cd docs/.vuepress/dist
           cp -r ../../../.github ./
           cp -r ../../../CNAME ./
+      - run: |
           git init
           git config --local user.email "Younglina0409@Outlook.com"
           git config --local user.name "Younglina"
