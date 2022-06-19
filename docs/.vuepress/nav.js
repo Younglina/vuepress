@@ -277,6 +277,10 @@ module.exports = [
             {
                 text: "222.完全二叉树的节点个数",
                 link: "/write/algorithms/leetCode222",
+            },
+            {
+                text: "687.最长同值路径",
+                link: "/write/algorithms/leetCode687",
             }
         ],
     },
