@@ -281,6 +281,10 @@ module.exports = [
             {
                 text: "687.最长同值路径",
                 link: "/write/algorithms/leetCode687",
+            },
+            {
+                text: "662.二叉树最大宽度",
+                link: "/write/algorithms/leetCode662",
             }
         ],
     },

@@ -379,6 +379,11 @@ module.exports = {
                 text: "687.最长同值路径",
                 title: "687.最长同值路径",
                 path: "leetCode687",
+            },
+            {
+                text: "662.二叉树最大宽度",
+                title: "662.二叉树最大宽度",
+                path: "leetCode662",
             }
         ],
     }
