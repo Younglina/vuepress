@@ -285,6 +285,10 @@ module.exports = [
             {
                 text: "662.二叉树最大宽度",
                 link: "/write/algorithms/leetCode662",
+            },
+            {
+                text: "623.在二叉树中增加一行",
+                link: "/write/algorithms/leetCode623",
             }
         ],
     },
