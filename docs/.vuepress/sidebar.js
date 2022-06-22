@@ -388,7 +388,12 @@ module.exports = {
             {
                 text: "623.在二叉树中增加一行",
                 title: "623.在二叉树中增加一行",
-                path: "/write/algorithms/leetCode623",
+                path: "leetCode623",
+            },
+            {
+                text: "655.输出二叉树",
+                title: "655.输出二叉树",
+                link: "leetCode655",
             }
         ],
     }
