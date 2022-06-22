@@ -3,8 +3,15 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 获取leetcode
+npm run ac_record
+
 # 生成静态文件
 npm run build
+
+git add .
+git commit -m "get ac record"
+git push
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist

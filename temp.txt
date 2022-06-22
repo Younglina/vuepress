@@ -1,0 +1,59 @@
+
+name: AC record schedule
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      TZ: Asia/Shanghai # 时区
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+      - run: yarn install
+      - run: |
+          git pull
+          yarn run ac_record
+          git pull
+
+      - name: Update GitHub
+        run: |
+          git config --local user.email "Younglina0409@Outlook.com"
+          git config --local user.name "Younglina"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}
+          git add .
+          git commit -m "update by github action"
+          git push
+
+      - name: Update GitHub
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+      - run: 
+          yarn run build
+      - run: |
+          cd docs/.vuepress/dist
+          cp -r ../../../.github ./
+          cp -r ../../../CNAME ./
+          git init
+          git config --local user.email "Younglina0409@Outlook.com"
+          git config --local user.name "Younglina"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-branches origin gh-pages
+          git add -A
+          git commit -m 'deploy by github action'
+          git push -f git@github.com:Younglina/Younglina.github.io.git master:gh-pages
+

@@ -161,4 +161,10 @@ module.exports = {
     //     }
     // }]
   ],
+  configureWebpack: {
+    node: {
+      global: true,
+      process: true
+    }
+  }
 };
