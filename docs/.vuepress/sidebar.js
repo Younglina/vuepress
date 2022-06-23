@@ -394,6 +394,11 @@ module.exports = {
                 text: "655.输出二叉树",
                 title: "655.输出二叉树",
                 link: "leetCode655",
+            },
+            {
+                text: "589.N叉树的前序遍历",
+                title: "589.N叉树的前序遍历",
+                link: "leetCode589",
             }
         ],
     }
