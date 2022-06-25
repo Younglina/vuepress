@@ -399,6 +399,11 @@ module.exports = {
                 text: "589.N叉树的前序遍历",
                 title: "589.N叉树的前序遍历",
                 link: "leetCode589",
+            },
+            {
+                text: "530.二叉搜索树的最小绝对差",
+                title: "530.二叉搜索树的最小绝对差",
+                link: "leetCode530",
             }
         ],
     }
