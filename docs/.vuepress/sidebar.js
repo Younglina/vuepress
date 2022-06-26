@@ -404,6 +404,11 @@ module.exports = {
                 text: "530.二叉搜索树的最小绝对差",
                 title: "530.二叉搜索树的最小绝对差",
                 link: "leetCode530",
+            },
+            {
+                text: "230.二叉搜索树中第K小的元素",
+                title: "230.二叉搜索树中第K小的元素",
+                link: "leetCode230",
             }
         ],
     }
