@@ -297,6 +297,10 @@ module.exports = [
             {
                 text: "589.N叉树的前序遍历",
                 link: "/write/algorithms/leetCode589",
+            },
+            {
+                text: "449.序列化和反序列化二叉搜索树",
+                link: "/write/algorithms/leetCode449",
             }
         ],
     },
