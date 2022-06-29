@@ -309,7 +309,11 @@ module.exports = [
             {
                 text: "230.二叉搜索树中第K小的元素",
                 link: "/write/algorithms/leetCode230",
-            }
+            },
+            {
+                text: "108.将有序数组转换为二叉搜索树",
+                link: "/write/algorithms/leetCode108",
+            },
         ],
     },
     {

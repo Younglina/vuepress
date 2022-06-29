@@ -408,13 +408,18 @@ module.exports = {
             {
                 text: "530.二叉搜索树的最小绝对差",
                 title: "530.二叉搜索树的最小绝对差",
-                link: "leetCode530",
+                path: "leetCode530",
             },
             {
                 text: "230.二叉搜索树中第K小的元素",
                 title: "230.二叉搜索树中第K小的元素",
-                link: "leetCode230",
-            }
+                path: "leetCode230",
+            },
+            {
+                text: "108.将有序数组转换为二叉搜索树",
+                title: "108.将有序数组转换为二叉搜索树",
+                path: "leetCode108",
+            },
         ],
     }
     ],
