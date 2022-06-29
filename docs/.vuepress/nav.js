@@ -301,6 +301,14 @@ module.exports = [
             {
                 text: "449.序列化和反序列化二叉搜索树",
                 link: "/write/algorithms/leetCode449",
+            },
+            {
+                text: "530.二叉搜索树的最小绝对差",
+                link: "/write/algorithms/leetCode530",
+            },
+            {
+                text: "230.二叉搜索树中第K小的元素",
+                link: "/write/algorithms/leetCode230",
             }
         ],
     },
