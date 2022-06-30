@@ -314,6 +314,10 @@ module.exports = [
                 text: "108.将有序数组转换为二叉搜索树",
                 link: "/write/algorithms/leetCode108",
             },
+            {
+                text: "42.接雨水",
+                link: "/write/algorithms/leetCode42",
+            },
         ],
     },
     {

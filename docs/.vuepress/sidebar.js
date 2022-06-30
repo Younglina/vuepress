@@ -420,6 +420,11 @@ module.exports = {
                 title: "108.将有序数组转换为二叉搜索树",
                 path: "leetCode108",
             },
+            {
+                text: "42.接雨水",
+                title: "42.接雨水",
+                path: "leetCode42",
+            },
         ],
     }
     ],
