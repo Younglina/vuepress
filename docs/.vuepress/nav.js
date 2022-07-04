@@ -318,6 +318,10 @@ module.exports = [
                 text: "42.接雨水",
                 link: "/write/algorithms/leetCode42",
             },
+            {
+                text: "143.重排链表",
+                link: "/write/algorithms/leetCode143",
+            },
         ],
     },
     {

@@ -425,6 +425,11 @@ module.exports = {
                 title: "42.接雨水",
                 path: "leetCode42",
             },
+            {
+                text: "143.重排链表",
+                title: "143.重排链表",
+                path: "leetCode143",
+            },
         ],
     }
     ],
