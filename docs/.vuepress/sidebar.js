@@ -430,6 +430,11 @@ module.exports = {
                 title: "143.重排链表",
                 path: "leetCode143",
             },
+            {
+                text: "128.最长连续序列",
+                title: "128.最长连续序列",
+                path: "leetCode128",
+            },
         ],
     }
     ],

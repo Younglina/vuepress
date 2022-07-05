@@ -322,6 +322,10 @@ module.exports = [
                 text: "143.重排链表",
                 link: "/write/algorithms/leetCode143",
             },
+            {
+                text: "128.最长连续序列",
+                link: "/write/algorithms/leetCode128",
+            },
         ],
     },
     {
