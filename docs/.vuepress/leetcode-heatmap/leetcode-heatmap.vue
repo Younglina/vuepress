@@ -1,9 +1,9 @@
 <template lang="">
   <div>
-    <div style="display: flex;justify-content: center;align-items: center;">
+    <!-- <div style="display: flex;justify-content: center;align-items: center;">
       <img style="margin: 10px" height="210px" width="40%" src="https://github-readme-stats.vercel.app/api?username=Younglina&show_icons=true&theme=gruvbox">
       <img style="margin: 10px" height="210px" width="40%" src="https://leetcard.jacoblin.cool/younglina?theme=unicorn&site=cn">
-    </div>
+    </div> -->
     <div class="heat-map home-blog-wrapper">
     <!-- range-color="['ebedf0', 'dae2ef', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e']" -->
       <div class="heat-info">

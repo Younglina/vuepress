@@ -470,7 +470,12 @@ module.exports = {
                 text: "200.岛屿数量",
                 title: "200.岛屿数量",
                 link: "/write/algorithms/leetCode200",
-            }
+            },
+            {
+                text: "394.字符串解码",
+                title: "394.字符串解码",
+                link: "/write/algorithms/leetCode394",
+            },
         ],
     }
     ],
