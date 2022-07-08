@@ -340,6 +340,11 @@ module.exports = [
                 title: "394.字符串解码",
                 link: "/write/algorithms/leetCode394",
             },
+            {
+                text: "347.前 K 个高频元素",
+                title: "347.前 K 个高频元素",
+                link: "/write/algorithms/leetCode347",
+            },
         ],
     },
     {
