@@ -440,6 +440,11 @@ module.exports = {
                 title: "148.排序链表",
                 path: "leetCode128",
             },
+            {
+                text: "873.最长的斐波那契子序列的长度",
+                title: "873.最长的斐波那契子序列的长度",
+                link: "/write/algorithms/leetCode873",
+            },
         ],
     }
     ],

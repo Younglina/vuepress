@@ -330,6 +330,10 @@ module.exports = [
                 text: "148.排序链表",
                 link: "/write/algorithms/leetCode148",
             },
+            {
+                text: "873.最长的斐波那契子序列的长度",
+                link: "/write/algorithms/leetCode873",
+            },
         ],
     },
     {

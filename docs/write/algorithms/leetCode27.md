@@ -1,7 +1,7 @@
 ---
 title: 27.移除元素
 author: Younglina
-date: '2022-01-06'
+date: '2022-07-10'
 showAccessNumber: true
 categories:
  - 算法
