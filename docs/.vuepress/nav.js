@@ -334,6 +334,18 @@ module.exports = [
                 text: "873.最长的斐波那契子序列的长度",
                 link: "/write/algorithms/leetCode873",
             },
+            {
+                text: "200.岛屿数量",
+                link: "/write/algorithms/leetCode200",
+            },
+            {
+                text: "394.字符串解码",
+                link: "/write/algorithms/leetCode394",
+            },
+            {
+                text: "347.前 K 个高频元素",
+                link: "/write/algorithms/leetCode347",
+            },
         ],
     },
     {
