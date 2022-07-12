@@ -347,6 +347,11 @@ module.exports = [
                 link: "/write/algorithms/leetCode347",
             },
             {
+                text: "873.最长的斐波那契子序列的长度",
+                title: "873.最长的斐波那契子序列的长度",
+                link: "/write/algorithms/leetCode873",
+            },
+            {
                 text: "剑指Offer26.树的子结构",
                 link: "/write/algorithms/leetCode_o26.md",
             },
