@@ -346,6 +346,10 @@ module.exports = [
                 text: "347.前 K 个高频元素",
                 link: "/write/algorithms/leetCode347",
             },
+            {
+                text: "剑指Offer26.树的子结构",
+                link: "/write/algorithms/leetCode_o26.md",
+            },
         ],
     },
     {
