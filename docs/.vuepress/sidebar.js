@@ -491,6 +491,11 @@ module.exports = {
                 title: "剑指Offer26.树的子结构",
                 link: "/write/algorithms/leetCode_o26.md",
             },
+            {
+                text: "239.滑动窗口最大值",
+                title: "239.滑动窗口最大值",
+                link: "/write/algorithms/leetCode239.md",
+            },
         ],
     }
     ],
