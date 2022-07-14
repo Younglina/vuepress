@@ -358,6 +358,10 @@ module.exports = [
                 text: "239.滑动窗口最大值",
                 link: "/write/algorithms/leetCode239.md",
             },
+            {
+                text: "155.最小栈",
+                link: "/write/algorithms/leetCode155.md",
+            },
         ],
     },
     {
