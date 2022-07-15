@@ -362,6 +362,10 @@ module.exports = [
                 text: "155.最小栈",
                 link: "/write/algorithms/leetCode155.md",
             },
+            {
+                text: "36.有效的数独",
+                link: "/write/algorithms/leetCode36.md",
+            },
         ],
     },
     {
