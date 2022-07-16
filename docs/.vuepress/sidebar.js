@@ -506,6 +506,11 @@ module.exports = {
                 title: "36.有效的数独",
                 link: "/write/algorithms/leetCode36.md",
             },
+            {
+                text: "40.组合总和II",
+                title: "40.组合总和II",
+                link: "/write/algorithms/leetCode40.md",
+            },
         ],
     }
     ],
