@@ -1,7 +1,7 @@
 ---
 title: 413.等差数列划分
 author: Younglina
-date: '2022-01-16'
+date: '2022-07-17'
 showAccessNumber: true
 categories:
  - 算法
