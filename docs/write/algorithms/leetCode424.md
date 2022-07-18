@@ -1,7 +1,7 @@
 ---
 title: 424.替换后的最长重复字符
 author: Younglina
-date: '2022-07-17'
+date: '2022-07-18'
 showAccessNumber: true
 categories:
  - 算法
