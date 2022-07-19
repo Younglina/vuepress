@@ -370,6 +370,10 @@ module.exports = [
                 text: "40.组合总和II",
                 link: "/write/algorithms/leetCode40.md",
             },
+            {
+                text: "304.二维区域和检索 - 矩阵不可变",
+                link: "/write/algorithms/leetCode304.md",
+            },
         ],
     },
     {
