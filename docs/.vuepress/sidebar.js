@@ -516,6 +516,11 @@ module.exports = {
                 title: "304.二维区域和检索 - 矩阵不可变",
                 link: "/write/algorithms/leetCode304.md",
             },
+            {
+                text: "378.有序矩阵中第 K 小的元素",
+                title: "378.有序矩阵中第 K 小的元素",
+                link: "/write/algorithms/leetCode378.md",
+            },
         ],
     }
     ],
