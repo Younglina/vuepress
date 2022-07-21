@@ -378,6 +378,10 @@ module.exports = [
                 text: "378.有序矩阵中第 K 小的元素",
                 link: "/write/algorithms/leetCode378.md",
             },
+            {
+                text: "95.不同的二叉搜索树 II",
+                link: "/write/algorithms/leetCode95.md",
+            },
         ],
     },
     {
