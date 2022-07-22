@@ -526,6 +526,11 @@ module.exports = {
                 title: "95.不同的二叉搜索树 II",
                 link: "/write/algorithms/leetCode95.md",
             },
+            {
+                text: "331.验证二叉树的前序序列化",
+                title: "331.验证二叉树的前序序列化",
+                link: "/write/algorithms/leetCode331.md",
+            },
         ],
     }
     ],
