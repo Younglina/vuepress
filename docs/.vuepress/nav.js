@@ -386,6 +386,10 @@ module.exports = [
                 text: "331.验证二叉树的前序序列化",
                 link: "/write/algorithms/leetCode331.md",
             },
+            {
+                text: "763.划分字母区间",
+                link: "/write/algorithms/leetCode763.md",
+            },
         ],
     },
     {
