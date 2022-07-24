@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>体验mpvue仿网易云音乐手机版 | Younglina</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" herf="&quot;/younglinaBlog/favicon.ico">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?353277c226a3c149b9619fba591d66ea";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2866f59a01d41a3c6b024f3152e7403e";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    <style>.content__default{max-width: unset !important;}
+      .markdown-body,.vssue,.vssue .vssue-new-comment .vssue-new-comment-input{font-size: 14px !important;}
+      .vssue-header-powered-by{display: none}</style>
+    <meta name="description" content="Younglina要加油！冲冲冲！">
+    <meta property="article:published_time" content="2018-08-31T00:00:00.000Z">
+    <meta property="article:modified_time" content="2021-12-29T16:00:00.000Z">
+    <meta property="og:site_name" content="Younglina blog">
+    <meta property="og:title" content="体验mpvue仿网易云音乐手机版">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://younglina.top/write/project/wx-cloud-music.html">
+    <meta name="twitter:title" content="体验mpvue仿网易云音乐手机版">
+    <meta name="twitter:url" content="https://younglina.top/write/project/wx-cloud-music.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="学习, mpvue, 小程序">
+    <meta property="article:tag" content="学习">
+    <meta name="keywords" content="Younglina,younglina,算法,vuepress,博客">
+    <meta name="author" content="Younglina">
+    <meta name="baidu-site-verification" content="code-qO24creHLS">
+    
+    <link rel="preload" href="/assets/css/0.styles.bab0d557.css" as="style"><link rel="preload" href="/assets/js/app.623981d2.js" as="script"><link rel="preload" href="/assets/js/3.41891af7.js" as="script"><link rel="preload" href="/assets/js/1.ffba29e6.js" as="script"><link rel="preload" href="/assets/js/125.315b7308.js" as="script"><link rel="prefetch" href="/assets/js/10.43896b75.js"><link rel="prefetch" href="/assets/js/100.f716790f.js"><link rel="prefetch" href="/assets/js/101.12e4d59e.js"><link rel="prefetch" href="/assets/js/102.b4bc5ce9.js"><link rel="prefetch" href="/assets/js/103.b33addae.js"><link rel="prefetch" href="/assets/js/104.75797326.js"><link rel="prefetch" href="/assets/js/105.de33836c.js"><link rel="prefetch" href="/assets/js/106.ed629660.js"><link rel="prefetch" href="/assets/js/107.a87d6977.js"><link rel="prefetch" href="/assets/js/108.1e68406d.js"><link rel="prefetch" href="/assets/js/109.3b85a950.js"><link rel="prefetch" href="/assets/js/11.a2c64ffb.js"><link rel="prefetch" href="/assets/js/110.012e18b2.js"><link rel="prefetch" href="/assets/js/111.c707ce9e.js"><link rel="prefetch" href="/assets/js/112.2f9689e7.js"><link rel="prefetch" href="/assets/js/113.711a0bfa.js"><link rel="prefetch" href="/assets/js/114.88882d1e.js"><link rel="prefetch" href="/assets/js/115.074703e4.js"><link rel="prefetch" href="/assets/js/116.36571af2.js"><link rel="prefetch" href="/assets/js/117.bd494357.js"><link rel="prefetch" href="/assets/js/118.46e5527e.js"><link rel="prefetch" href="/assets/js/119.94576100.js"><link rel="prefetch" href="/assets/js/12.78943b17.js"><link rel="prefetch" href="/assets/js/120.9070c4de.js"><link rel="prefetch" href="/assets/js/121.41609945.js"><link rel="prefetch" href="/assets/js/122.832f4efd.js"><link rel="prefetch" href="/assets/js/123.e2fe5c07.js"><link rel="prefetch" href="/assets/js/124.27f899d7.js"><link rel="prefetch" href="/assets/js/126.01f381e9.js"><link rel="prefetch" href="/assets/js/127.9d8072e5.js"><link rel="prefetch" href="/assets/js/13.4ba0ac3c.js"><link rel="prefetch" href="/assets/js/14.1b65fa87.js"><link rel="prefetch" href="/assets/js/15.b308b5b4.js"><link rel="prefetch" href="/assets/js/16.3836babb.js"><link rel="prefetch" href="/assets/js/17.2cf9a6a7.js"><link rel="prefetch" href="/assets/js/18.8d13ea4e.js"><link rel="prefetch" href="/assets/js/19.276bbff0.js"><link rel="prefetch" href="/assets/js/20.9062cbec.js"><link rel="prefetch" href="/assets/js/21.eb44c39a.js"><link rel="prefetch" href="/assets/js/22.9262d927.js"><link rel="prefetch" href="/assets/js/23.add428c3.js"><link rel="prefetch" href="/assets/js/24.7806ac3b.js"><link rel="prefetch" href="/assets/js/25.4d281df5.js"><link rel="prefetch" href="/assets/js/26.cb44e181.js"><link rel="prefetch" href="/assets/js/27.b39c8f55.js"><link rel="prefetch" href="/assets/js/28.b278874a.js"><link rel="prefetch" href="/assets/js/29.bfc85df7.js"><link rel="prefetch" href="/assets/js/30.3bb1d10f.js"><link rel="prefetch" href="/assets/js/31.e920783c.js"><link rel="prefetch" href="/assets/js/32.85b8aa07.js"><link rel="prefetch" href="/assets/js/33.60cca05d.js"><link rel="prefetch" href="/assets/js/34.5fd2fc02.js"><link rel="prefetch" href="/assets/js/35.a2233b67.js"><link rel="prefetch" href="/assets/js/36.6ba6f059.js"><link rel="prefetch" href="/assets/js/37.39961d5c.js"><link rel="prefetch" href="/assets/js/38.51d55879.js"><link rel="prefetch" href="/assets/js/39.3141c66a.js"><link rel="prefetch" href="/assets/js/4.217f0c8e.js"><link rel="prefetch" href="/assets/js/40.73a5a9bc.js"><link rel="prefetch" href="/assets/js/41.0c39183a.js"><link rel="prefetch" href="/assets/js/42.1c863293.js"><link rel="prefetch" href="/assets/js/43.88ff7604.js"><link rel="prefetch" href="/assets/js/44.6a952c5a.js"><link rel="prefetch" href="/assets/js/45.e41d5c93.js"><link rel="prefetch" href="/assets/js/46.79c5ecf3.js"><link rel="prefetch" href="/assets/js/47.af8e4917.js"><link rel="prefetch" href="/assets/js/48.17dfccda.js"><link rel="prefetch" href="/assets/js/49.54b24666.js"><link rel="prefetch" href="/assets/js/5.b2b39274.js"><link rel="prefetch" href="/assets/js/50.d3e05380.js"><link rel="prefetch" href="/assets/js/51.1d7d1e2b.js"><link rel="prefetch" href="/assets/js/52.699b74b6.js"><link rel="prefetch" href="/assets/js/53.13d2926c.js"><link rel="prefetch" href="/assets/js/54.155d6af6.js"><link rel="prefetch" href="/assets/js/55.791df294.js"><link rel="prefetch" href="/assets/js/56.a14f6303.js"><link rel="prefetch" href="/assets/js/57.9332b194.js"><link rel="prefetch" href="/assets/js/58.c9fade57.js"><link rel="prefetch" href="/assets/js/59.2c2001eb.js"><link rel="prefetch" href="/assets/js/6.70d3c148.js"><link rel="prefetch" href="/assets/js/60.31e71839.js"><link rel="prefetch" href="/assets/js/61.6d1ad143.js"><link rel="prefetch" href="/assets/js/62.fcc01b70.js"><link rel="prefetch" href="/assets/js/63.efb1adbd.js"><link rel="prefetch" href="/assets/js/64.c8796fa9.js"><link rel="prefetch" href="/assets/js/65.6dae5733.js"><link rel="prefetch" href="/assets/js/66.0f438585.js"><link rel="prefetch" href="/assets/js/67.8afdb7ad.js"><link rel="prefetch" href="/assets/js/68.34c2fbc2.js"><link rel="prefetch" href="/assets/js/69.14e087da.js"><link rel="prefetch" href="/assets/js/7.ca5ab1e6.js"><link rel="prefetch" href="/assets/js/70.ed6d058c.js"><link rel="prefetch" href="/assets/js/71.f930b47d.js"><link rel="prefetch" href="/assets/js/72.6ee4d46b.js"><link rel="prefetch" href="/assets/js/73.f1570dff.js"><link rel="prefetch" href="/assets/js/74.fd8e648c.js"><link rel="prefetch" href="/assets/js/75.b735a3fe.js"><link rel="prefetch" href="/assets/js/76.53fc65c7.js"><link rel="prefetch" href="/assets/js/77.660dc770.js"><link rel="prefetch" href="/assets/js/78.6e6b7ec7.js"><link rel="prefetch" href="/assets/js/79.d90bb033.js"><link rel="prefetch" href="/assets/js/8.8104ed2e.js"><link rel="prefetch" href="/assets/js/80.fd058f39.js"><link rel="prefetch" href="/assets/js/81.376960bd.js"><link rel="prefetch" href="/assets/js/82.0a874166.js"><link rel="prefetch" href="/assets/js/83.f9d61124.js"><link rel="prefetch" href="/assets/js/84.eb9dfb2d.js"><link rel="prefetch" href="/assets/js/85.bd50630f.js"><link rel="prefetch" href="/assets/js/86.44d3474f.js"><link rel="prefetch" href="/assets/js/87.a5eb181f.js"><link rel="prefetch" href="/assets/js/88.21d58d6e.js"><link rel="prefetch" href="/assets/js/89.9f897da5.js"><link rel="prefetch" href="/assets/js/9.7f721fda.js"><link rel="prefetch" href="/assets/js/90.3201f8b3.js"><link rel="prefetch" href="/assets/js/91.d0c088e7.js"><link rel="prefetch" href="/assets/js/92.7ef279ea.js"><link rel="prefetch" href="/assets/js/93.d7537b70.js"><link rel="prefetch" href="/assets/js/94.0452c0eb.js"><link rel="prefetch" href="/assets/js/95.f9243fe0.js"><link rel="prefetch" href="/assets/js/96.ad0b626f.js"><link rel="prefetch" href="/assets/js/97.287d703c.js"><link rel="prefetch" href="/assets/js/98.ae8c7b0f.js"><link rel="prefetch" href="/assets/js/99.ec2d9cad.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bab0d557.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Younglina</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>Younglina要加油！冲冲冲！</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>Younglina</span>
+            
+          <span data-v-25ba6db2>2021 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpeg" alt="Younglina" class="logo"> <span class="site-name">Younglina</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/docs/Vue3Config.html" class="nav-link"><i class="undefined"></i>
+  Vue3配置
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/VuepressConfig.html" class="nav-link"><i class="undefined"></i>
+  搭建vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/codeFormat.html" class="nav-link"><i class="undefined"></i>
+  代码规范格式化配置
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/vuepressPlugin.html" class="nav-link"><i class="undefined"></i>
+  vuepress本地复制代码插件
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/githubPages.html" class="nav-link"><i class="undefined"></i>
+  vuepress配置github pages域名访问
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/dp-step.html" class="nav-link"><i class="undefined"></i>
+  动态规划：为什么是dp[n-2]+dp[n-1]
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/vue3-nuxt.html" class="nav-link"><i class="undefined"></i>
+  学习vue3-nuxt
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      源码阅读
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/sourceRead/element-make-new.html" class="nav-link"><i class="undefined"></i>
+  ElemetUI make new
+</a></li><li class="dropdown-item"><!----> <a href="/write/sourceRead/only-allow.html" class="nav-link"><i class="undefined"></i>
+  包管理器only-allow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/project/electron-cloud-music.html" class="nav-link"><i class="undefined"></i>
+  electron仿网易云音乐桌面版
+</a></li><li class="dropdown-item"><!----> <a href="/write/project/my-trao.html" class="nav-link"><i class="undefined"></i>
+  trao开发微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/write/project/wx-cloud-music.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+  mpvue仿网易云音乐
+</a></li><li class="dropdown-item"><!----> <a href="/write/project/eat.html" class="nav-link"><i class="undefined"></i>
+  看看吃啥
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode03.html" class="nav-link"><i class="undefined"></i>
+  03.无重复字符的最长子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode11.html" class="nav-link"><i class="undefined"></i>
+  11.盛水最多的容器
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode15.html" class="nav-link"><i class="undefined"></i>
+  15.三数之和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode19.html" class="nav-link"><i class="undefined"></i>
+  19.删除链表的倒数第 N 个结点
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode26.html" class="nav-link"><i class="undefined"></i>
+  26.删除有序数组中的重复项
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode27.html" class="nav-link"><i class="undefined"></i>
+  27.移除元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode88.html" class="nav-link"><i class="undefined"></i>
+  88.合并两个有序数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode345.html" class="nav-link"><i class="undefined"></i>
+  345.反转字符串中的元音字母
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode413.html" class="nav-link"><i class="undefined"></i>
+  413.等差数列划分
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode424.html" class="nav-link"><i class="undefined"></i>
+  424.替换后的最长重复字符
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode438.html" class="nav-link"><i class="undefined"></i>
+  438.找到字符串中所有字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode443.html" class="nav-link"><i class="undefined"></i>
+  443.压缩字符串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode485.html" class="nav-link"><i class="undefined"></i>
+  485.最大连续 1 的个数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode524.html" class="nav-link"><i class="undefined"></i>
+  524.通过删除字母匹配到字典里最长单词
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode581.html" class="nav-link"><i class="undefined"></i>
+  581.最短无序连续子数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode594.html" class="nav-link"><i class="undefined"></i>
+  594.最长和谐子序列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode611.html" class="nav-link"><i class="undefined"></i>
+  611.有效三角形的个数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode633.html" class="nav-link"><i class="undefined"></i>
+  633.平方数之和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode825.html" class="nav-link"><i class="undefined"></i>
+  825.适龄的朋友
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode881.html" class="nav-link"><i class="undefined"></i>
+  881.救生艇
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode930.html" class="nav-link"><i class="undefined"></i>
+  930.和相同的二元字数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode992.html" class="nav-link"><i class="undefined"></i>
+  992.K个不同整数的子数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1004.html" class="nav-link"><i class="undefined"></i>
+  1004.最大连续1的个数 III
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1221.html" class="nav-link"><i class="undefined"></i>
+  1221.分割平衡字符串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode242.html" class="nav-link"><i class="undefined"></i>
+  242.有效的字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode20.html" class="nav-link"><i class="undefined"></i>
+  20.有效的括号
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1446.html" class="nav-link"><i class="undefined"></i>
+  1446.连续字符
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode30.html" class="nav-link"><i class="undefined"></i>
+  30.串联所有单词的子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode219.html" class="nav-link"><i class="undefined"></i>
+  219.存在重复元素 II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode187.html" class="nav-link"><i class="undefined"></i>
+  187.重复的DNA序列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode567.html" class="nav-link"><i class="undefined"></i>
+  567.字符串的排列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1208.html" class="nav-link"><i class="undefined"></i>
+  1208.尽可能使字符串相等
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode101.html" class="nav-link"><i class="undefined"></i>
+  101.对称二叉树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode112.html" class="nav-link"><i class="undefined"></i>
+  112.路径总和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode90.html" class="nav-link"><i class="undefined"></i>
+  90.子集 II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode704.html" class="nav-link"><i class="undefined"></i>
+  704.二分查找
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode33.html" class="nav-link"><i class="undefined"></i>
+  33.搜索旋转排序数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode278.html" class="nav-link"><i class="undefined"></i>
+  278.第一个错误的版本
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode_o53.html" class="nav-link"><i class="undefined"></i>
+  剑指 Offer 53 - II.0～n-1中缺失的数字
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode62.html" class="nav-link"><i class="undefined"></i>
+  62.不同路径
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode63.html" class="nav-link"><i class="undefined"></i>
+  63.不同路径II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode64.html" class="nav-link"><i class="undefined"></i>
+  64.最小路径和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode343.html" class="nav-link"><i class="undefined"></i>
+  343.整数拆分
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode96.html" class="nav-link"><i class="undefined"></i>
+  96.不同的二叉搜索树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode396.html" class="nav-link"><i class="undefined"></i>
+  396.旋转函数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode494.html" class="nav-link"><i class="undefined"></i>
+  494.目标和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode377.html" class="nav-link"><i class="undefined"></i>
+  377.组合总和Ⅳ
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1663.html" class="nav-link"><i class="undefined"></i>
+  1663.具有给定数值的最小字符串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode875.html" class="nav-link"><i class="undefined"></i>
+  875.爱吃香蕉的珂珂
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode697.html" class="nav-link"><i class="undefined"></i>
+  697.数组的度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode41.html" class="nav-link"><i class="undefined"></i>
+  41.缺失的第一个正数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode54.html" class="nav-link"><i class="undefined"></i>
+  54.螺旋矩阵
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode926.html" class="nav-link"><i class="undefined"></i>
+  926.将字符串翻转到单调递增
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode890.html" class="nav-link"><i class="undefined"></i>
+  890.查找和替换模式
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode696.html" class="nav-link"><i class="undefined"></i>
+  696.计数二进制子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCod538.html" class="nav-link"><i class="undefined"></i>
+  538.计数二进制子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode739.html" class="nav-link"><i class="undefined"></i>
+  739.每日温度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode222.html" class="nav-link"><i class="undefined"></i>
+  222.完全二叉树的节点个数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode687.html" class="nav-link"><i class="undefined"></i>
+  687.最长同值路径
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode662.html" class="nav-link"><i class="undefined"></i>
+  662.二叉树最大宽度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode623.html" class="nav-link"><i class="undefined"></i>
+  623.在二叉树中增加一行
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode655.html" class="nav-link"><i class="undefined"></i>
+  655.输出二叉树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode589.html" class="nav-link"><i class="undefined"></i>
+  589.N叉树的前序遍历
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode449.html" class="nav-link"><i class="undefined"></i>
+  449.序列化和反序列化二叉搜索树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode530.html" class="nav-link"><i class="undefined"></i>
+  530.二叉搜索树的最小绝对差
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode230.html" class="nav-link"><i class="undefined"></i>
+  230.二叉搜索树中第K小的元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode108.html" class="nav-link"><i class="undefined"></i>
+  108.将有序数组转换为二叉搜索树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode42.html" class="nav-link"><i class="undefined"></i>
+  42.接雨水
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode143.html" class="nav-link"><i class="undefined"></i>
+  143.重排链表
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode128.html" class="nav-link"><i class="undefined"></i>
+  128.最长连续序列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode148.html" class="nav-link"><i class="undefined"></i>
+  148.排序链表
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode873.html" class="nav-link"><i class="undefined"></i>
+  873.最长的斐波那契子序列的长度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode200.html" class="nav-link"><i class="undefined"></i>
+  200.岛屿数量
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode394.html" class="nav-link"><i class="undefined"></i>
+  394.字符串解码
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode347.html" class="nav-link"><i class="undefined"></i>
+  347.前 K 个高频元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode873.html" class="nav-link"><i class="undefined"></i>
+  873.最长的斐波那契子序列的长度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode_o26.html" class="nav-link"><i class="undefined"></i>
+  剑指Offer26.树的子结构
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode239.html" class="nav-link"><i class="undefined"></i>
+  239.滑动窗口最大值
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode155.html" class="nav-link"><i class="undefined"></i>
+  155.最小栈
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode36.html" class="nav-link"><i class="undefined"></i>
+  36.有效的数独
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode40.html" class="nav-link"><i class="undefined"></i>
+  40.组合总和II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode304.html" class="nav-link"><i class="undefined"></i>
+  304.二维区域和检索 - 矩阵不可变
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode378.html" class="nav-link"><i class="undefined"></i>
+  378.有序矩阵中第 K 小的元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode95.html" class="nav-link"><i class="undefined"></i>
+  95.不同的二叉搜索树 II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode331.html" class="nav-link"><i class="undefined"></i>
+  331.验证二叉树的前序序列化
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode763.html" class="nav-link"><i class="undefined"></i>
+  763.划分字母区间
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法模版
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/remove-duplicates.html" class="nav-link"><i class="undefined"></i>
+  数据有序，相同元素保留 `k` 位模版
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/sliding-window.html" class="nav-link"><i class="undefined"></i>
+  滑动窗口模板
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/find-str-in-other.html" class="nav-link"><i class="undefined"></i>
+  从一个字符串中找另一个字符串模版
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/traverse-tree.html" class="nav-link"><i class="undefined"></i>
+  树的前中后序遍历
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/bluered.html" class="nav-link"><i class="undefined"></i>
+  蓝红二分模板
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/avatar.jpeg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    Younglina
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>115</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>42</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9><li class="social-item" data-v-39576ba9><i class="iconfont reco-github" style="color:#e15b64;" data-v-39576ba9></i></li><li class="social-item" data-v-39576ba9><i class="iconfont reco-mayun" style="color:#e15b64;" data-v-39576ba9></i></li><li class="social-item" data-v-39576ba9><i class="iconfont reco-juejin" style="color:#67cc86;" data-v-39576ba9></i></li></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/docs/Vue3Config.html" class="nav-link"><i class="undefined"></i>
+  Vue3配置
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/VuepressConfig.html" class="nav-link"><i class="undefined"></i>
+  搭建vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/codeFormat.html" class="nav-link"><i class="undefined"></i>
+  代码规范格式化配置
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/vuepressPlugin.html" class="nav-link"><i class="undefined"></i>
+  vuepress本地复制代码插件
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/githubPages.html" class="nav-link"><i class="undefined"></i>
+  vuepress配置github pages域名访问
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/dp-step.html" class="nav-link"><i class="undefined"></i>
+  动态规划：为什么是dp[n-2]+dp[n-1]
+</a></li><li class="dropdown-item"><!----> <a href="/write/docs/vue3-nuxt.html" class="nav-link"><i class="undefined"></i>
+  学习vue3-nuxt
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      源码阅读
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/sourceRead/element-make-new.html" class="nav-link"><i class="undefined"></i>
+  ElemetUI make new
+</a></li><li class="dropdown-item"><!----> <a href="/write/sourceRead/only-allow.html" class="nav-link"><i class="undefined"></i>
+  包管理器only-allow
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/project/electron-cloud-music.html" class="nav-link"><i class="undefined"></i>
+  electron仿网易云音乐桌面版
+</a></li><li class="dropdown-item"><!----> <a href="/write/project/my-trao.html" class="nav-link"><i class="undefined"></i>
+  trao开发微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/write/project/wx-cloud-music.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+  mpvue仿网易云音乐
+</a></li><li class="dropdown-item"><!----> <a href="/write/project/eat.html" class="nav-link"><i class="undefined"></i>
+  看看吃啥
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode03.html" class="nav-link"><i class="undefined"></i>
+  03.无重复字符的最长子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode11.html" class="nav-link"><i class="undefined"></i>
+  11.盛水最多的容器
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode15.html" class="nav-link"><i class="undefined"></i>
+  15.三数之和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode19.html" class="nav-link"><i class="undefined"></i>
+  19.删除链表的倒数第 N 个结点
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode26.html" class="nav-link"><i class="undefined"></i>
+  26.删除有序数组中的重复项
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode27.html" class="nav-link"><i class="undefined"></i>
+  27.移除元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode88.html" class="nav-link"><i class="undefined"></i>
+  88.合并两个有序数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode345.html" class="nav-link"><i class="undefined"></i>
+  345.反转字符串中的元音字母
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode413.html" class="nav-link"><i class="undefined"></i>
+  413.等差数列划分
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode424.html" class="nav-link"><i class="undefined"></i>
+  424.替换后的最长重复字符
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode438.html" class="nav-link"><i class="undefined"></i>
+  438.找到字符串中所有字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode443.html" class="nav-link"><i class="undefined"></i>
+  443.压缩字符串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode485.html" class="nav-link"><i class="undefined"></i>
+  485.最大连续 1 的个数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode524.html" class="nav-link"><i class="undefined"></i>
+  524.通过删除字母匹配到字典里最长单词
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode581.html" class="nav-link"><i class="undefined"></i>
+  581.最短无序连续子数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode594.html" class="nav-link"><i class="undefined"></i>
+  594.最长和谐子序列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode611.html" class="nav-link"><i class="undefined"></i>
+  611.有效三角形的个数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode633.html" class="nav-link"><i class="undefined"></i>
+  633.平方数之和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode825.html" class="nav-link"><i class="undefined"></i>
+  825.适龄的朋友
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode881.html" class="nav-link"><i class="undefined"></i>
+  881.救生艇
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode930.html" class="nav-link"><i class="undefined"></i>
+  930.和相同的二元字数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode992.html" class="nav-link"><i class="undefined"></i>
+  992.K个不同整数的子数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1004.html" class="nav-link"><i class="undefined"></i>
+  1004.最大连续1的个数 III
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1221.html" class="nav-link"><i class="undefined"></i>
+  1221.分割平衡字符串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode242.html" class="nav-link"><i class="undefined"></i>
+  242.有效的字母异位词
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode20.html" class="nav-link"><i class="undefined"></i>
+  20.有效的括号
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1446.html" class="nav-link"><i class="undefined"></i>
+  1446.连续字符
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode30.html" class="nav-link"><i class="undefined"></i>
+  30.串联所有单词的子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode219.html" class="nav-link"><i class="undefined"></i>
+  219.存在重复元素 II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode187.html" class="nav-link"><i class="undefined"></i>
+  187.重复的DNA序列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode567.html" class="nav-link"><i class="undefined"></i>
+  567.字符串的排列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1208.html" class="nav-link"><i class="undefined"></i>
+  1208.尽可能使字符串相等
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode101.html" class="nav-link"><i class="undefined"></i>
+  101.对称二叉树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode112.html" class="nav-link"><i class="undefined"></i>
+  112.路径总和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode90.html" class="nav-link"><i class="undefined"></i>
+  90.子集 II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode704.html" class="nav-link"><i class="undefined"></i>
+  704.二分查找
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode33.html" class="nav-link"><i class="undefined"></i>
+  33.搜索旋转排序数组
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode278.html" class="nav-link"><i class="undefined"></i>
+  278.第一个错误的版本
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode_o53.html" class="nav-link"><i class="undefined"></i>
+  剑指 Offer 53 - II.0～n-1中缺失的数字
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode62.html" class="nav-link"><i class="undefined"></i>
+  62.不同路径
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode63.html" class="nav-link"><i class="undefined"></i>
+  63.不同路径II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode64.html" class="nav-link"><i class="undefined"></i>
+  64.最小路径和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode343.html" class="nav-link"><i class="undefined"></i>
+  343.整数拆分
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode96.html" class="nav-link"><i class="undefined"></i>
+  96.不同的二叉搜索树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode396.html" class="nav-link"><i class="undefined"></i>
+  396.旋转函数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode494.html" class="nav-link"><i class="undefined"></i>
+  494.目标和
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode377.html" class="nav-link"><i class="undefined"></i>
+  377.组合总和Ⅳ
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode1663.html" class="nav-link"><i class="undefined"></i>
+  1663.具有给定数值的最小字符串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode875.html" class="nav-link"><i class="undefined"></i>
+  875.爱吃香蕉的珂珂
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode697.html" class="nav-link"><i class="undefined"></i>
+  697.数组的度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode41.html" class="nav-link"><i class="undefined"></i>
+  41.缺失的第一个正数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode54.html" class="nav-link"><i class="undefined"></i>
+  54.螺旋矩阵
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode926.html" class="nav-link"><i class="undefined"></i>
+  926.将字符串翻转到单调递增
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode890.html" class="nav-link"><i class="undefined"></i>
+  890.查找和替换模式
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode696.html" class="nav-link"><i class="undefined"></i>
+  696.计数二进制子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCod538.html" class="nav-link"><i class="undefined"></i>
+  538.计数二进制子串
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode739.html" class="nav-link"><i class="undefined"></i>
+  739.每日温度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode222.html" class="nav-link"><i class="undefined"></i>
+  222.完全二叉树的节点个数
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode687.html" class="nav-link"><i class="undefined"></i>
+  687.最长同值路径
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode662.html" class="nav-link"><i class="undefined"></i>
+  662.二叉树最大宽度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode623.html" class="nav-link"><i class="undefined"></i>
+  623.在二叉树中增加一行
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode655.html" class="nav-link"><i class="undefined"></i>
+  655.输出二叉树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode589.html" class="nav-link"><i class="undefined"></i>
+  589.N叉树的前序遍历
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode449.html" class="nav-link"><i class="undefined"></i>
+  449.序列化和反序列化二叉搜索树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode530.html" class="nav-link"><i class="undefined"></i>
+  530.二叉搜索树的最小绝对差
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode230.html" class="nav-link"><i class="undefined"></i>
+  230.二叉搜索树中第K小的元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode108.html" class="nav-link"><i class="undefined"></i>
+  108.将有序数组转换为二叉搜索树
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode42.html" class="nav-link"><i class="undefined"></i>
+  42.接雨水
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode143.html" class="nav-link"><i class="undefined"></i>
+  143.重排链表
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode128.html" class="nav-link"><i class="undefined"></i>
+  128.最长连续序列
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode148.html" class="nav-link"><i class="undefined"></i>
+  148.排序链表
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode873.html" class="nav-link"><i class="undefined"></i>
+  873.最长的斐波那契子序列的长度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode200.html" class="nav-link"><i class="undefined"></i>
+  200.岛屿数量
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode394.html" class="nav-link"><i class="undefined"></i>
+  394.字符串解码
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode347.html" class="nav-link"><i class="undefined"></i>
+  347.前 K 个高频元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode873.html" class="nav-link"><i class="undefined"></i>
+  873.最长的斐波那契子序列的长度
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode_o26.html" class="nav-link"><i class="undefined"></i>
+  剑指Offer26.树的子结构
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode239.html" class="nav-link"><i class="undefined"></i>
+  239.滑动窗口最大值
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode155.html" class="nav-link"><i class="undefined"></i>
+  155.最小栈
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode36.html" class="nav-link"><i class="undefined"></i>
+  36.有效的数独
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode40.html" class="nav-link"><i class="undefined"></i>
+  40.组合总和II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode304.html" class="nav-link"><i class="undefined"></i>
+  304.二维区域和检索 - 矩阵不可变
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode378.html" class="nav-link"><i class="undefined"></i>
+  378.有序矩阵中第 K 小的元素
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode95.html" class="nav-link"><i class="undefined"></i>
+  95.不同的二叉搜索树 II
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode331.html" class="nav-link"><i class="undefined"></i>
+  331.验证二叉树的前序序列化
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms/leetCode763.html" class="nav-link"><i class="undefined"></i>
+  763.划分字母区间
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      算法模版
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/remove-duplicates.html" class="nav-link"><i class="undefined"></i>
+  数据有序，相同元素保留 `k` 位模版
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/sliding-window.html" class="nav-link"><i class="undefined"></i>
+  滑动窗口模板
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/find-str-in-other.html" class="nav-link"><i class="undefined"></i>
+  从一个字符串中找另一个字符串模版
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/traverse-tree.html" class="nav-link"><i class="undefined"></i>
+  树的前中后序遍历
+</a></li><li class="dropdown-item"><!----> <a href="/write/algorithms-temp/bluered.html" class="nav-link"><i class="undefined"></i>
+  蓝红二分模板
+</a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>项目</span> <!----></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>体验mpvue仿网易云音乐手机版</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>Younglina</span>
+            
+          <span data-v-25ba6db2>2021 - </span>
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">体验mpvue仿网易云音乐手机版</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>Younglina</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>2018/8/31</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>学习</span><span class="tag-item" data-v-f875f3fc>mpvue</span><span class="tag-item" data-v-f875f3fc>小程序</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="my-project"><a href="#my-project" class="header-anchor">#</a> my-project</h1> <p>在尝试开发了一个微信小程序之，后发现有 mpvue 这么个东西可以来开发小程序以后就忍不住了，所以把小程序和我用 vue 开发过的版本结合修改以后，再尝试用 mpvue+iview-weapp 开发一个版本。<br>
+后台接口用的是<a href="https://binaryify.github.io/NeteaseCloudMusicApi/#/" target="_blank" rel="noopener noreferrer">NeteaseCloudMusicApi<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>,感谢大佬的分享</p> <p><a href="https://github.com/lucaswww/my-project" target="_blank" rel="noopener noreferrer">git 地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，demo 项目代码质量不是很好，哈哈哈哈多多见谅 😁</p> <h2 id="更新记录-前几次更新忘记写记录"><a href="#更新记录-前几次更新忘记写记录" class="header-anchor">#</a> 更新记录(前几次更新忘记写记录...)</h2> <p>18/9/25 修改账号页</p> <p><img src="https://user-gold-cdn.xitu.io/2018/9/25/1660fd9094120d99?w=631&amp;h=419&amp;f=jpeg&amp;s=62891" alt=""></p> <h2 id="预览-不动点大图看"><a href="#预览-不动点大图看" class="header-anchor">#</a> 预览（不动点大图看）</h2> <p><img src="https://user-gold-cdn.xitu.io/2018/8/31/1658e1511bcb13fe?w=250&amp;h=450&amp;f=gif&amp;s=4675839" alt=""></p> <h2 id="目前完成"><a href="#目前完成" class="header-anchor">#</a> 目前完成</h2> <ul><li>推荐歌单</li> <li>排行榜</li> <li>歌单详情</li> <li>播放页</li> <li>歌单评论</li> <li>搜索</li> <li>扫一扫(基础功能)</li> <li>周边(百度地图 api)</li></ul> <h2 id="项目搭建"><a href="#项目搭建" class="header-anchor">#</a> 项目搭建</h2> <ul><li>最开始还是要把<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">微信小程序开发工具<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>下载一下</li> <li>mpvue 项目建立，跟着官网走一遍是最快的 <a href="http://mpvue.com/mpvue/quickstart/" target="_blank" rel="noopener noreferrer">快速上手<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>支持 iview-weapp，还是跟着官网<a href="https://weapp.iviewui.com/docs/guide/start" target="_blank" rel="noopener noreferrer">快速上手<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，这里就一个地方要注意，把下载下来的<strong>iview-weapp 项目的 dist 文件夹</strong>（可以改名字）是放到<strong>你项目编译后的</strong>dist 目录下，iview-weapp 官网没有效果的展示，所以建议扫它上面的二维码查看效果以后对照它的代码进行开发</li> <li>最后就是用微信小程序开发工具打开项目(不是 dist 目录)，用你常用的编译器编写代码（src 目录下）</li></ul> <h2 id="请求方面"><a href="#请求方面" class="header-anchor">#</a> 请求方面</h2> <p>微信小程序有自带的 wx.request()可以使用，还可以用<a href="https://wendux.github.io/dist/#/doc/flyio/readme" target="_blank" rel="noopener noreferrer">Flyio<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，我是用的 Flyio<br>
+具体使用的话可以再每个模块中</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var Fly=require(&quot;flyio/dist/npm/wx&quot;)
+var fly=new Fly
+fly.get(url).then(res=&gt;{})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>还有就是在 main.js 中</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const Fly = require('flyio/dist/npm/wx');
+let fly = new Fly();
+Vue.prototype.$fly = fly;
+//模块中使用
+this.$fiy.get(url).then(res=&gt;{})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="路由跳转传参"><a href="#路由跳转传参" class="header-anchor">#</a> 路由跳转传参</h2> <p>wx.navigateTo({url:'../test/main?id='+id})<br>
+第一种：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>onShow (options) {
+
+let id = options.id
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>第二种：在所有页面组件内可以通过 this.$root.$mp.query 获取,要注意就是：写在 mounted 函数里，写到 created 报错。</p> <p>第三种：在所有的组件内可以通过 this.$root.$mp.appOptions 获取。<br>
+正常情况下三种应该都是可以的，某一种没用的时候就尝试另外两种</p> <h2 id="vuex-方面"><a href="#vuex-方面" class="header-anchor">#</a> vuex 方面</h2> <p>还是和 vue 里面的使用一样，简单的<br>
+/src/store/store.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from 'vue'
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+  state: {
+   oneState:'one'
+    }
+  },
+  mutations: {
+    setItem: (state,data) =&gt; {
+      state.oneState = data
+    },
+  },
+  getters : {
+    getItem (state) {
+        return state.oneState
+    },
+});
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>/src/main.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import store from './store/store'
+Vue.prototype.$store = store;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>/src/page/text.vue</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import {mapGetters} from 'vuex'
+  export default {
+     computed:{
+       ...mapGetters([
+         'oneState'
+        ])
+     },
+     },
+     methods:{
+         test(){
+             this.$store.commit('setItem', 'two')
+         }
+     }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>好了，基本的开发流程就是这样，具体的开发大部分还是像 vue 开发那样，自己在开发的时候，遇到的坑还是有的，但网上基本都能找到解决方案，具体遇到的时候就查一查都能查到，收获很多。
+最后这里还有一个用 vue 开发的版本可<a href="http://lucaswww.coding.me/my-music/dist/#/index/Music" target="_blank" rel="noopener noreferrer">在线预览<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>,建议用 chrome 的手机模式预览</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2021/12/30</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#更新记录-前几次更新忘记写记录" class="sidebar-link reco-side-更新记录-前几次更新忘记写记录" data-v-cb1513f6>更新记录(前几次更新忘记写记录...)</a></li><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#预览-不动点大图看" class="sidebar-link reco-side-预览-不动点大图看" data-v-cb1513f6>预览（不动点大图看）</a></li><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#目前完成" class="sidebar-link reco-side-目前完成" data-v-cb1513f6>目前完成</a></li><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#项目搭建" class="sidebar-link reco-side-项目搭建" data-v-cb1513f6>项目搭建</a></li><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#请求方面" class="sidebar-link reco-side-请求方面" data-v-cb1513f6>请求方面</a></li><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#路由跳转传参" class="sidebar-link reco-side-路由跳转传参" data-v-cb1513f6>路由跳转传参</a></li><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#vuex-方面" class="sidebar-link reco-side-vuex-方面" data-v-cb1513f6>vuex 方面</a></li><li class="level-2" data-v-cb1513f6><a href="/write/project/wx-cloud-music.html#总结" class="sidebar-link reco-side-总结" data-v-cb1513f6>总结</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Younglina
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/assets/js/app.623981d2.js" defer></script><script src="/assets/js/3.41891af7.js" defer></script><script src="/assets/js/1.ffba29e6.js" defer></script><script src="/assets/js/125.315b7308.js" defer></script>
+  </body>
+</html>
